@@ -1,5 +1,5 @@
 ---
-title: "Lecutre 2"
+title: "Lecture 2"
 date: 2020-01-14T02:30:11-05:00
 summary: "Intro To C"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 **Slides** : [Intro To C](https://osu.instructure.com/courses/95904/files/folder/Zoom_Lectures/Class%20slides?preview=28368861)
 
-C is **procedural**, compiles to machine code that runs directly on the hardware. Direct manipulation of memory, no garbage collection. Memory leaks occur when memory is missmanaged.
+C is **procedural**, compiles to machine code that runs directly on the hardware. Direct manipulation of memory, no garbage collection. Memory leaks occur when memory is mismanaged.
 
 RAM is finite. 64 bit address spaces,  use 42 bits, 2^42 bytes (~4TB) of max RAM.
 
@@ -38,7 +38,7 @@ Error that occur at **run time** are `semantic errors`
 Errors that occur at **compile time** are `syntax errors`
 
 ## Categories of computer languages
-- Delarations
+- Declarations
 - Data Movement
 - Arithmetic/Logical Operations (ALU)
 - Control-Flow
@@ -49,7 +49,7 @@ Errors that occur at **compile time** are `syntax errors`
 #include <stdlib.h>
 
 int main() {
-    printf("Hellow, World!\n");
+    printf("Hello, World!\n");
     printf(EXIT_SUCCESS);
 }
 ```
@@ -109,7 +109,7 @@ All declarations in a block must precede the first non-declarative statement. Th
 }
 ```
 
-Funcations cannot be nested.
+Functions cannot be nested.
 
 All functions have file scope and can be called anywhere in the file after the declaration.
 
@@ -128,7 +128,7 @@ float add_floats2(float, float);
 ## Declaration
 Type information only.
 - Variable, can only be declared once in a block.
-  - must be delcared before being referenced in a non-declarative statement.
+  - must be declared before being referenced in a non-declarative statement.
 
 ``` c
 float new_float;
@@ -136,8 +136,8 @@ float new_float;
 
 - Function
   - Known as the **prototype**
-  - can be declared multiple times. When compiling multiple files, definitions must exist per file, thus multiple declarations of the same fuction.
-  - must be declared before being referenced in a non-declarative statmenet. (before called/invoked)
+  - can be declared multiple times. When compiling multiple files, definitions must exist per file, thus multiple declarations of the same function.
+  - must be declared before being referenced in a non-declarative statement. (before called/invoked)
 
 
 ## Definition
@@ -148,7 +148,7 @@ float new_float = 2
 ```
 
 - Function, can only be defined once.
-  - return type, arguement types, and statements.
+  - return type, argument types, and statements.
 
 ``` c
 float add_floats(float a, float b) {
@@ -157,4 +157,4 @@ float add_floats(float a, float b) {
 ```
 
 ## Assignment
-**Read** : Pointers on C, Chapther 14, *The Preprocessr* (omit 14.5)
+**Read** : Pointers on C, Chapter 14, *The Preprocessor* (omit 14.5)

@@ -5,10 +5,10 @@ summary: "Chapter 14, The Preprocessor (omit 14.5)"
 draft: false
 ---
 
-# The Prepreocessor
+# The Preprocessor
 First step in compiling. Removes comments, inserts #include contents, substitues #define symbols, and processes conditional compliation directives.
 
-## Predevined symbols
+## Predefined symbols
 
 | Symbol | Sample Value | Meaning
 |---|---|---|
@@ -19,7 +19,7 @@ First step in compiling. Removes comments, inserts #include contents, substitues
 |__STDC__||1 if conforming to ANSI C, else undefined.|
 
 ## #define
-All occurances of `name` are replaced with `stuff`. `name` cannot contain white space characters but `stuff` can be anything.
+All occurrences of `name` are replaced with `stuff`. `name` cannot contain white space characters but `stuff` can be anything.
 ``` c
 #define name stuff
 ```
@@ -29,10 +29,10 @@ All occurances of `name` are replaced with `stuff`. `name` cannot contain white 
                       sum += 1;                   \
                    }
 ```
-> Don't missue this. Perfer functions for statement reuse.
+> Don't misuse this. Prefer functions for statement reuse.
 
 ### Macros
-Define but with a comma delimited list of arguments. Remember, `name` cann't have spaces.
+Define but with a comma delimited list of arguments. Remember, `name` cannot have spaces.
 
 ``` c
 #define name(parameter-list) stuff
@@ -43,12 +43,12 @@ Macro replacements are textual, think carefully about the result of the text swa
 #define DOUBLE(x) ( (x) + (x) )
 ```
 
-> Macro's that evaluate numeric expresssions should be parenthesized to avoid unxpected interactions.
+> Macro's that evaluate numeric expressions should be parenthesized to avoid unexpected interactions.
 
-> Avoid macros that obsecure C syntatical standards. It hinders other developers who know C, but not necessairly your macros.
+> Avoid macros that obscure C syntactical standards. It hinders other developers who know C, but not necessarily your macros.
 
-### Substition
-`#define` stataments may contain the invocation of other `#define` statements. Macros may not be resursive. Every uses of a macro is a direct text replacment and can massivly bloat the size of the file to be compiled. This will execute marginally faster at the cost of code readability. By convention, all macro's should be defined in all upper case to differentaite from funcations.
+### Substitution
+`#define` statements may contain the invocation of other `#define` statements. Macros may not be recursive. Every uses of a macro is a direct text replacement and can massively bloat the size of the file to be compiled. This will execute marginally faster at the cost of code readability. By convention, all macro's should be defined in all upper case to differentiate from functions.
 
 C will concatenate adjacent strings. Consider a macro that reports the formatted value of a statement. This will only work if a string literal, `"%d"`, is given as the macro argument.
 ``` c
@@ -59,7 +59,7 @@ PRINT( "%d", 3 * 3);
 /* The value is 9 */
 ```
 
-For concatinating non string literals, we must use the preprocessor to convert the argument into a string. `#VALUE` will be replaced with a string representation of the argument. e.g. `"3 * 3 "`.
+For concatenating non string literals, we must use the preprocessor to convert the argument into a string. `#VALUE` will be replaced with a string representation of the argument. e.g. `"3 * 3 "`.
 ``` c
 #define PRINT(FORMAT,VALUE)       \
   printf( "The value of " #VALUE  \
@@ -70,7 +70,7 @@ PRINT( "%d", 3 * 3);
 ```
 
 #### ## construct
-`##` causes the token on their side of `##` to be concatinated. Note this bizare method of dynamically assigning a variable ending in a number.
+`##` causes the token on their side of `##` to be concatenated. Note this bizarre method of dynamically assigning a variable ending in a number.
 ``` c
 #define WEIRD_DYNAMIC_VAR_ASSIGNMENT(var_num, value)  \
                        var ## var_num = value
@@ -80,7 +80,7 @@ WEIRD_DYNAMIC_VAR_ASSIGNMENT(5, 100);
 ```
 
 ### undef
-Remove a definition. Usefull for re-defining a definion.
+Remove a definition. Usefully for re-defining a definition.
 ``` c
 #undef name
 ```
@@ -94,7 +94,7 @@ gcc -D name=definition
 ### 14.3 Conditional Compilation
 Conditionally include and exclude sections of code. If the value of `constant-expression` is zero (false), the preprocessor will remove the block. `#else` and `#elsif` are valid as expected. Preprocessor statements may be nested.
 ``` c
-#if contasnt-expression
+#if constant-expression
   ...
 #endif
 ```
@@ -115,7 +115,7 @@ Testing for the presence of definitions is supported.
 ```
 
 ### Library and local includes
-Use angle brackets `<filename>` and double quotes `"filename"` to differentaite library and local includes.
+Use angle brackets `<filename>` and double quotes `"filename"` to differentiate library and local includes.
 ``` c
 #include <stdio.h>
 #include "myfile.h"
@@ -123,7 +123,7 @@ Use angle brackets `<filename>` and double quotes `"filename"` to differentaite 
 
 Included files may themselves contain include statements. The Standard requires at least 8 levels of nested `#include` statements but does not specify a maximum. Convention dictates that there is little reason for more than two.
 
-Complex programs may inadvertenly cause the same file to be included multiple times. Use conditional compilation as a work around.
+Complex programs may inadvertency cause the same file to be included multiple times. Use conditional compilation as a work around.
 ``` c
 #ifndef _SOMEHEADER_H
   #define _SOMEHEADER_H

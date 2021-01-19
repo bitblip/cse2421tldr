@@ -1,5 +1,5 @@
 ---
-title: "Lecutre 1"
+title: "Lecture 1"
 date: 2020-01-12T02:30:11-05:00
 summary: "Intro to course and Unix vs Linux"
 draft: false
@@ -18,11 +18,11 @@ draft: false
 
 **Test** : Pointers on C, by Kenneth Reek 1997
 
-Always incluce the following certification text when submitting assignements. Either in a readme or in a code file as a comment.
+Always include the following certification text when submitting assignments. Either in a readme or in a code file as a comment.
 
 > BY SUBMITTING THIS FILE TO CARMEN, I CERTIFY THAT I HAVE STRICTLY ADHERED TO THE TENURES OF THE OHIO STATE UNIVERSITY’S ACADEMIC INTEGRITY POLICY WITH RESPECT TO THIS ASSIGNMENT.
 
-Connect remotly to [stdlinux](https://cse.osu.edu/about/remote-access)
+Connect remotely to [stdlinux](https://cse.osu.edu/about/remote-access)
 
 Why study C?
 [https://osu.instructure.com/courses/95904/files/folder/Zoom_Lectures/Class%20slides?preview=28363022](https://osu.instructure.com/courses/95904/files/folder/Zoom_Lectures/Class%20slides?preview=28363022)
@@ -48,7 +48,7 @@ Compiling your program.
 % gcc -ansi -pedantic -g -o <executable> <filename.c>
 ```
 
-Compiling C programms is done with the `gcc` command. Use `-ansi` to use the ANSI C standard and `-pedantic` for warnings. The `-g` flag will allow debugging with `gdb`.
+Compiling C programs is done with the `gcc` command. Use `-ansi` to use the ANSI C standard and `-pedantic` for warnings. The `-g` flag will allow debugging with `gdb`.
 
 ## Assignements
 **Read** : https://tldp.org/LDP/intro-linux/html/sect_01_01.html [^1]
