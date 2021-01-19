@@ -1,8 +1,8 @@
 ---
 title: "Lecture 2"
 date: 2020-01-14T02:30:11-05:00
-summary: "Intro To C"
-draft: false
+description : "Intro To C"
+tags: ["static", "dynamic", "c"]
 ---
 
 # Intro To C

@@ -1,22 +1,22 @@
 ---
 title: "Pointers On C"
 date: 2020-01-15T02:30:11-05:00
-summary: "Chapter 14, The Preprocessor (omit 14.5)"
-draft: false
+description : "Chapter 14, The Preprocessor (omit 14.5)"
+tags: ["preprocessor", "c"]
 ---
 
 # The Preprocessor
-First step in compiling. Removes comments, inserts #include contents, substitues #define symbols, and processes conditional compliation directives.
+First step in compiling. Removes comments, inserts #include contents, substitutes #define symbols, and processes conditional compilation directives.
 
 ## Predefined symbols
 
 | Symbol | Sample Value | Meaning
 |---|---|---|
-|__FILE__|"name.c"|Name of the source file being compiled.|
-|__LINE__|25|Line number of the current line in the file.|
-|__DATE__|"Jan 1 2020"|Date the file was compiled.|
-|__TIME__|"18:04:30"|Time that the file was compiled.|
-|__STDC__||1 if conforming to ANSI C, else undefined.|
+|\_\_FILE\_\_|"name.c"|Name of the source file being compiled.|
+|\_\_LINE\_\_|25|Line number of the current line in the file.|
+|\_\_DATE\_\_|"Jan 1 2020"|Date the file was compiled.|
+|\_\_TIME\_\_|"18:04:30"|Time that the file was compiled.|
+|\_\_STDC\_\_||1 if conforming to ANSI C, else undefined.|
 
 ## #define
 All occurrences of `name` are replaced with `stuff`. `name` cannot contain white space characters but `stuff` can be anything.

@@ -1,8 +1,8 @@
 ---
 title: "Lecture 1"
 date: 2020-01-12T02:30:11-05:00
-summary: "Intro to course and Unix vs Linux"
-draft: false
+description : "Intro to course and Unix vs Linux."
+tags: ["certification", "stdlinux", "c"]
 ---
 
 # Lecture 1
@@ -16,7 +16,7 @@ draft: false
 
 **Text** : Computer Systems: A Programmer’s Perspective, 3rd Edition, by Randall E. Bryant and David R. O’Hallaron, (Required)
 
-**Test** : Pointers on C, by Kenneth Reek 1997
+**Text** : Pointers on C, by Kenneth Reek 1997
 
 Always include the following certification text when submitting assignments. Either in a readme or in a code file as a comment.
 
