@@ -3,36 +3,68 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://bitblip.github.io/cse2421tldr/</loc>
+    <loc>/</loc>
+    <lastmod>2020-01-15T02:30:11-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/c/</loc>
     <lastmod>2020-01-15T02:30:11-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bitblip.github.io/cse2421tldr/posts/reading-pointers-on-c/</loc>
+    <loc>/posts/reading-pointers-on-c/</loc>
     <lastmod>2020-01-15T02:30:11-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bitblip.github.io/cse2421tldr/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2020-01-15T02:30:11-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bitblip.github.io/cse2421tldr/posts/lecture-2/</loc>
+    <loc>/tags/preprocessor/</loc>
+    <lastmod>2020-01-15T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-01-15T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dynamic/</loc>
     <lastmod>2020-01-14T02:30:11-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bitblip.github.io/cse2421tldr/posts/lecture-1/</loc>
+    <loc>/posts/lecture-2/</loc>
+    <lastmod>2020-01-14T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/static/</loc>
+    <lastmod>2020-01-14T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/certification/</loc>
     <lastmod>2020-01-12T02:30:11-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bitblip.github.io/cse2421tldr/categories/</loc>
+    <loc>/posts/lecture-1/</loc>
+    <lastmod>2020-01-12T02:30:11-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bitblip.github.io/cse2421tldr/tags/</loc>
+    <loc>/tags/stdlinux/</loc>
+    <lastmod>2020-01-12T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
   </url>
   
 </urlset>

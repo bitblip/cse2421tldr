@@ -2,9 +2,64 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on CSE 2421 TL;DR</title>
-    <link>https://bitblip.github.io/cse2421tldr/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on CSE 2421 TL;DR</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://bitblip.github.io/cse2421tldr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>c</title>
+      <link>/tags/c/</link>
+      <pubDate>Wed, 15 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>preprocessor</title>
+      <link>/tags/preprocessor/</link>
+      <pubDate>Wed, 15 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/tags/preprocessor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dynamic</title>
+      <link>/tags/dynamic/</link>
+      <pubDate>Tue, 14 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/tags/dynamic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>static</title>
+      <link>/tags/static/</link>
+      <pubDate>Tue, 14 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/tags/static/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>certification</title>
+      <link>/tags/certification/</link>
+      <pubDate>Sun, 12 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/tags/certification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stdlinux</title>
+      <link>/tags/stdlinux/</link>
+      <pubDate>Sun, 12 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/tags/stdlinux/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

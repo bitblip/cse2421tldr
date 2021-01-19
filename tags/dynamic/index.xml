@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dynamic on CSE 2421 TL;DR</title>
+    <link>/tags/dynamic/</link>
+    <description>Recent content in dynamic on CSE 2421 TL;DR</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/tags/dynamic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture 2</title>
+      <link>/posts/lecture-2/</link>
+      <pubDate>Tue, 14 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/posts/lecture-2/</guid>
+      <description>Intro To C Video : Intro To C
+Slides : Intro To C
+C is procedural, compiles to machine code that runs directly on the hardware. Direct manipulation of memory, no garbage collection. Memory leaks occur when memory is mismanaged.
+RAM is finite. 64 bit address spaces, use 42 bits, 2^42 bytes (~4TB) of max RAM.
+C does NOT  Classes/Objects (n the OOP sense) Encapsulation Inheritance Not object oriented  Features ARE approximated by writing code in a disciplined way.</description>
+    </item>
+    
+  </channel>
+</rss>

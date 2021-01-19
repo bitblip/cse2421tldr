@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>preprocessor on CSE 2421 TL;DR</title>
+    <link>/tags/preprocessor/</link>
+    <description>Recent content in preprocessor on CSE 2421 TL;DR</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/tags/preprocessor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pointers On C</title>
+      <link>/posts/reading-pointers-on-c/</link>
+      <pubDate>Wed, 15 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/posts/reading-pointers-on-c/</guid>
+      <description>The Preprocessor First step in compiling. Removes comments, inserts #include contents, substitutes #define symbols, and processes conditional compilation directives.
+Predefined symbols    Symbol Sample Value Meaning     __FILE__ &amp;ldquo;name.c&amp;rdquo; Name of the source file being compiled.   __LINE__ 25 Line number of the current line in the file.   __DATE__ &amp;ldquo;Jan 1 2020&amp;rdquo; Date the file was compiled.   __TIME__ &amp;ldquo;18:04:30&amp;rdquo; Time that the file was compiled.</description>
+    </item>
+    
+  </channel>
+</rss>
