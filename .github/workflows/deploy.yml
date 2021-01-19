@@ -34,7 +34,7 @@ jobs:
 
       # Build site
       - name: Build
-        run: hugo
+        run: hugo -b "/cse2421tldr/"
       
       # Deploy to branch
       - name: Deploy
