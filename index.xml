@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CSE 2421 TL;DR</title>
-    <link>/</link>
+    <link>/cse2421tldr/</link>
     <description>Recent content on CSE 2421 TL;DR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pointers On C</title>
-      <link>/posts/reading-pointers-on-c/</link>
+      <link>/cse2421tldr/posts/reading-pointers-on-c/</link>
       <pubDate>Wed, 15 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>/posts/reading-pointers-on-c/</guid>
+      <guid>/cse2421tldr/posts/reading-pointers-on-c/</guid>
       <description>The Preprocessor First step in compiling. Removes comments, inserts #include contents, substitutes #define symbols, and processes conditional compilation directives.
 Predefined symbols    Symbol Sample Value Meaning     __FILE__ &amp;ldquo;name.c&amp;rdquo; Name of the source file being compiled.   __LINE__ 25 Line number of the current line in the file.   __DATE__ &amp;ldquo;Jan 1 2020&amp;rdquo; Date the file was compiled.   __TIME__ &amp;ldquo;18:04:30&amp;rdquo; Time that the file was compiled.</description>
     </item>
     
     <item>
       <title>Lecture 2</title>
-      <link>/posts/lecture-2/</link>
+      <link>/cse2421tldr/posts/lecture-2/</link>
       <pubDate>Tue, 14 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>/posts/lecture-2/</guid>
+      <guid>/cse2421tldr/posts/lecture-2/</guid>
       <description>Intro To C Video : Intro To C
 Slides : Intro To C
 C is procedural, compiles to machine code that runs directly on the hardware. Direct manipulation of memory, no garbage collection. Memory leaks occur when memory is mismanaged.
@@ -32,10 +32,10 @@ C does NOT  Classes/Objects (n the OOP sense) Encapsulation Inheritance Not obje
     
     <item>
       <title>Lecture 1</title>
-      <link>/posts/lecture-1/</link>
+      <link>/cse2421tldr/posts/lecture-1/</link>
       <pubDate>Sun, 12 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>/posts/lecture-1/</guid>
+      <guid>/cse2421tldr/posts/lecture-1/</guid>
       <description>Lecture 1 Intro  Your browser does not support video.  Slides : Intro To Course
 Email : Mike green.15@osu.edu
 Text : Computer Systems: A Programmer’s Perspective, 3rd Edition, by Randall E. Bryant and David R. O’Hallaron, (Required)

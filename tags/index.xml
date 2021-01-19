@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on CSE 2421 TL;DR</title>
-    <link>/tags/</link>
+    <link>/cse2421tldr/tags/</link>
     <description>Recent content in Tags on CSE 2421 TL;DR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>c</title>
-      <link>/tags/c/</link>
+      <link>/cse2421tldr/tags/c/</link>
       <pubDate>Wed, 15 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>/tags/c/</guid>
+      <guid>/cse2421tldr/tags/c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>preprocessor</title>
-      <link>/tags/preprocessor/</link>
+      <link>/cse2421tldr/tags/preprocessor/</link>
       <pubDate>Wed, 15 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>/tags/preprocessor/</guid>
+      <guid>/cse2421tldr/tags/preprocessor/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dynamic</title>
-      <link>/tags/dynamic/</link>
+      <link>/cse2421tldr/tags/dynamic/</link>
       <pubDate>Tue, 14 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>/tags/dynamic/</guid>
+      <guid>/cse2421tldr/tags/dynamic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>static</title>
-      <link>/tags/static/</link>
+      <link>/cse2421tldr/tags/static/</link>
       <pubDate>Tue, 14 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>/tags/static/</guid>
+      <guid>/cse2421tldr/tags/static/</guid>
       <description></description>
     </item>
     
     <item>
       <title>certification</title>
-      <link>/tags/certification/</link>
+      <link>/cse2421tldr/tags/certification/</link>
       <pubDate>Sun, 12 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>/tags/certification/</guid>
+      <guid>/cse2421tldr/tags/certification/</guid>
       <description></description>
     </item>
     
     <item>
       <title>stdlinux</title>
-      <link>/tags/stdlinux/</link>
+      <link>/cse2421tldr/tags/stdlinux/</link>
       <pubDate>Sun, 12 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>/tags/stdlinux/</guid>
+      <guid>/cse2421tldr/tags/stdlinux/</guid>
       <description></description>
     </item>
     

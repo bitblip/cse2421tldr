@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>certification on CSE 2421 TL;DR</title>
-    <link>/tags/certification/</link>
+    <link>/cse2421tldr/tags/certification/</link>
     <description>Recent content in certification on CSE 2421 TL;DR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/tags/certification/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/certification/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lecture 1</title>
-      <link>/posts/lecture-1/</link>
+      <link>/cse2421tldr/posts/lecture-1/</link>
       <pubDate>Sun, 12 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>/posts/lecture-1/</guid>
+      <guid>/cse2421tldr/posts/lecture-1/</guid>
       <description>Lecture 1 Intro  Your browser does not support video.  Slides : Intro To Course
 Email : Mike green.15@osu.edu
 Text : Computer Systems: A Programmer’s Perspective, 3rd Edition, by Randall E. Bryant and David R. O’Hallaron, (Required)
