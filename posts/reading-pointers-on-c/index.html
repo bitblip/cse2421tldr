@@ -140,9 +140,9 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="the-prepreocessor">The Prepreocessor</h1>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="the-preprocessor">The Preprocessor</h1>
 <p>First step in compiling. Removes comments, inserts #include contents, substitues #define symbols, and processes conditional compliation directives.</p>
-<h2 id="predevined-symbols">Predevined symbols</h2>
+<h2 id="predefined-symbols">Predefined symbols</h2>
 <table>
 <thead>
 <tr>
@@ -180,34 +180,34 @@
 </tbody>
 </table>
 <h2 id="define">#define</h2>
-<p>All occurances of <code>name</code> are replaced with <code>stuff</code>. <code>name</code> cannot contain white space characters but <code>stuff</code> can be anything.</p>
+<p>All occurrences of <code>name</code> are replaced with <code>stuff</code>. <code>name</code> cannot contain white space characters but <code>stuff</code> can be anything.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#define name stuff
 </span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#define SOME_LOOPS for (i = 0; i &lt; 10; i += 1&gt;) { \
 </span><span style="color:#75715e">                      sum += 1;                   \
 </span><span style="color:#75715e">                   }
 </span></code></pre></div><blockquote>
-<p>Don&rsquo;t missue this. Perfer functions for statement reuse.</p>
+<p>Don&rsquo;t misuse this. Prefer functions for statement reuse.</p>
 </blockquote>
 <h3 id="macros">Macros</h3>
-<p>Define but with a comma delimited list of arguments. Remember, <code>name</code> cann&rsquo;t have spaces.</p>
+<p>Define but with a comma delimited list of arguments. Remember, <code>name</code> cannot have spaces.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#define name(parameter-list) stuff
 </span></code></pre></div><p>Macro replacements are textual, think carefully about the result of the text swap. Not only the insertion of the macro text into code, but also the argument text into the macro.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#define DOUBLE(x) ( (x) + (x) )
 </span></code></pre></div><blockquote>
-<p>Macro&rsquo;s that evaluate numeric expresssions should be parenthesized to avoid unxpected interactions.</p>
+<p>Macro&rsquo;s that evaluate numeric expressions should be parenthesized to avoid unexpected interactions.</p>
 </blockquote>
 <blockquote>
-<p>Avoid macros that obsecure C syntatical standards. It hinders other developers who know C, but not necessairly your macros.</p>
+<p>Avoid macros that obscure C syntactical standards. It hinders other developers who know C, but not necessarily your macros.</p>
 </blockquote>
-<h3 id="substition">Substition</h3>
-<p><code>#define</code> stataments may contain the invocation of other <code>#define</code> statements. Macros may not be resursive. Every uses of a macro is a direct text replacment and can massivly bloat the size of the file to be compiled. This will execute marginally faster at the cost of code readability. By convention, all macro&rsquo;s should be defined in all upper case to differentaite from funcations.</p>
+<h3 id="substitution">Substitution</h3>
+<p><code>#define</code> statements may contain the invocation of other <code>#define</code> statements. Macros may not be recursive. Every uses of a macro is a direct text replacement and can massively bloat the size of the file to be compiled. This will execute marginally faster at the cost of code readability. By convention, all macro&rsquo;s should be defined in all upper case to differentiate from functions.</p>
 <p>C will concatenate adjacent strings. Consider a macro that reports the formatted value of a statement. This will only work if a string literal, <code>&quot;%d&quot;</code>, is given as the macro argument.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#define PRINT(FORMAT,VALUE)                   \
 </span><span style="color:#75715e">  printf( &#34;The value is &#34; FORMAT &#34;\n&#34;, VALUE) \
 </span><span style="color:#75715e">...
 </span><span style="color:#75715e"></span>PRINT( <span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>);
 <span style="color:#75715e">/* The value is 9 */</span>
-</code></pre></div><p>For concatinating non string literals, we must use the preprocessor to convert the argument into a string. <code>#VALUE</code> will be replaced with a string representation of the argument. e.g. <code>&quot;3 * 3 &quot;</code>.</p>
+</code></pre></div><p>For concatenating non string literals, we must use the preprocessor to convert the argument into a string. <code>#VALUE</code> will be replaced with a string representation of the argument. e.g. <code>&quot;3 * 3 &quot;</code>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#define PRINT(FORMAT,VALUE)       \
 </span><span style="color:#75715e">  printf( &#34;The value of &#34; #VALUE  \
 </span><span style="color:#75715e">    &#34; is &#34; FORMAT &#34;\n&#34;, VALUE)
@@ -215,21 +215,21 @@
 PRINT( <span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>);
 <span style="color:#75715e">/* The value of 3 * 3 is 9 */</span>
 </code></pre></div><h4 id="-construct">## construct</h4>
-<p><code>##</code> causes the token on their side of <code>##</code> to be concatinated. Note this bizare method of dynamically assigning a variable ending in a number.</p>
+<p><code>##</code> causes the token on their side of <code>##</code> to be concatenated. Note this bizarre method of dynamically assigning a variable ending in a number.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#define WEIRD_DYNAMIC_VAR_ASSIGNMENT(var_num, value)  \
 </span><span style="color:#75715e">                       var ## var_num = value
 </span><span style="color:#75715e"></span>...
 WEIRD_DYNAMIC_VAR_ASSIGNMENT(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">100</span>);
 <span style="color:#75715e">/* var5 = 100 */</span>
 </code></pre></div><h3 id="undef">undef</h3>
-<p>Remove a definition. Usefull for re-defining a definion.</p>
+<p>Remove a definition. Usefully for re-defining a definition.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#undef name
 </span></code></pre></div><h3 id="command-line-define">Command line define</h3>
 <p>Define definitions can come from the command line arguments to the compiler. <code>-U</code> will undefine.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gcc -D name<span style="color:#f92672">=</span>definition
 </code></pre></div><h3 id="143-conditional-compilation">14.3 Conditional Compilation</h3>
 <p>Conditionally include and exclude sections of code. If the value of <code>constant-expression</code> is zero (false), the preprocessor will remove the block. <code>#else</code> and <code>#elsif</code> are valid as expected. Preprocessor statements may be nested.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#if contasnt-expression
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#if constant-expression
 </span><span style="color:#75715e"></span>  ...
 <span style="color:#75715e">#endif
 </span></code></pre></div><p>A typical example of conditional compilation. DEBUG may be defined in any of the ways described.</p>
@@ -243,11 +243,11 @@ WEIRD_DYNAMIC_VAR_ASSIGNMENT(<span style="color:#ae81ff">5</span>, <span style="
 </span><span style="color:#75715e">#if !defined(symbol)
 </span><span style="color:#75715e">#ifndef symbol
 </span></code></pre></div><h3 id="library-and-local-includes">Library and local includes</h3>
-<p>Use angle brackets <code>&lt;filename&gt;</code> and double quotes <code>&quot;filename&quot;</code> to differentaite library and local includes.</p>
+<p>Use angle brackets <code>&lt;filename&gt;</code> and double quotes <code>&quot;filename&quot;</code> to differentiate library and local includes.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
 </span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;myfile.h&#34;</span><span style="color:#75715e">
 </span></code></pre></div><p>Included files may themselves contain include statements. The Standard requires at least 8 levels of nested <code>#include</code> statements but does not specify a maximum. Convention dictates that there is little reason for more than two.</p>
-<p>Complex programs may inadvertenly cause the same file to be included multiple times. Use conditional compilation as a work around.</p>
+<p>Complex programs may inadvertency cause the same file to be included multiple times. Use conditional compilation as a work around.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#ifndef _SOMEHEADER_H
 </span><span style="color:#75715e"></span>  <span style="color:#75715e">#define _SOMEHEADER_H
 </span><span style="color:#75715e"></span>  <span style="color:#75715e">#include</span> <span style="color:#75715e">...</span><span style="color:#75715e">
