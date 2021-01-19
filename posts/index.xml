@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on CSE 2421 TL;DR</title>
-    <link>http://example.org/posts/</link>
+    <link>https://bitblip.github.io/cse2421tldr/posts/</link>
     <description>Recent content in Posts on CSE 2421 TL;DR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="https://bitblip.github.io/cse2421tldr/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lecutre 2</title>
-      <link>http://example.org/posts/lecture-2/</link>
+      <link>https://bitblip.github.io/cse2421tldr/posts/lecture-2/</link>
       <pubDate>Tue, 14 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>http://example.org/posts/lecture-2/</guid>
+      <guid>https://bitblip.github.io/cse2421tldr/posts/lecture-2/</guid>
       <description>Intro To C</description>
     </item>
     
     <item>
       <title>Pointers On C</title>
-      <link>http://example.org/posts/reading-pointers-on-c/</link>
+      <link>https://bitblip.github.io/cse2421tldr/posts/reading-pointers-on-c/</link>
       <pubDate>Tue, 14 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>http://example.org/posts/reading-pointers-on-c/</guid>
+      <guid>https://bitblip.github.io/cse2421tldr/posts/reading-pointers-on-c/</guid>
       <description>Chapter 14, The Preprocessor (omit 14.5)</description>
     </item>
     
     <item>
       <title>Lecutre 1</title>
-      <link>http://example.org/posts/lecture-1/</link>
+      <link>https://bitblip.github.io/cse2421tldr/posts/lecture-1/</link>
       <pubDate>Sun, 12 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>http://example.org/posts/lecture-1/</guid>
+      <guid>https://bitblip.github.io/cse2421tldr/posts/lecture-1/</guid>
       <description>Intro to course and Unix vs Linux</description>
     </item>
     
