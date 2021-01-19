@@ -60,6 +60,5 @@ paginate = 5
 
     [languages.en.params.logo]
       logoText = "CSE 2421 TL;DR"
-      logoHomeLink = "/"
 
     [languages.en.menu]
