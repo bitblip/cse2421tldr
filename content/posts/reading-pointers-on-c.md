@@ -1,6 +1,6 @@
 ---
 title: "Pointers On C"
-date: 2020-01-14T02:30:11-05:00
+date: 2020-01-15T02:30:11-05:00
 summary: "Chapter 14, The Preprocessor (omit 14.5)"
 draft: false
 ---
