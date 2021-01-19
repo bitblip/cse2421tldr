@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://bitblip.github.io/cse2421tldr/"
 languageCode = "en-us"
 title = "CSE 2421 TL;DR"
 theme = "ananke"
