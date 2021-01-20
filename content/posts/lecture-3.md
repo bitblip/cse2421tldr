@@ -1,5 +1,5 @@
 ---
-title: "Lecture 2"
+title: "Lecture 3"
 date: 2020-01-14T02:30:11-05:00
 description : "Intro To C"
 tags: ["static", "dynamic", "c"]

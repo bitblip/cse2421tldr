@@ -1,5 +1,5 @@
 ---
-title: "Pointers On C"
+title: "Text: Pointers On C (3_Intro_To_C)"
 date: 2020-01-15T02:30:11-05:00
 description : "Chapter 14, The Preprocessor (omit 14.5)"
 tags: ["preprocessor", "c"]
@@ -118,7 +118,7 @@ Testing for the presence of definitions is supported.
 Use angle brackets `<filename>` and double quotes `"filename"` to differentiate library and local includes.
 ``` c
 #include <stdio.h>
-#include "myfile.h"
+#include "myFile.h"
 ```
 
 Included files may themselves contain include statements. The Standard requires at least 8 levels of nested `#include` statements but does not specify a maximum. Convention dictates that there is little reason for more than two.

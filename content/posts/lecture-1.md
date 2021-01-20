@@ -1,5 +1,5 @@
 ---
-title: "Lecture 1"
+title: "Lecture 1 and 2"
 date: 2020-01-12T02:30:11-05:00
 description : "Intro to course and Unix vs Linux."
 tags: ["certification", "stdlinux", "c"]
@@ -39,7 +39,7 @@ Advantages
 
 **Slides** : [Unix Linux](https://osu.instructure.com/files/28363025/download?download_frd=1)
 
-Unix developed in C from 1069-1971 at AT&T Bell Laboratories. Proprietary, modular, unfied file system, portable.
+Unix developed in C from 1069-1971 at AT&T Bell Laboratories. Proprietary, modular, unfired file system, portable.
 
 Linux developed in C in 1991. Unix clone, re-implemented as open source. Has many distributions.
 
@@ -50,7 +50,7 @@ Compiling your program.
 
 Compiling C programs is done with the `gcc` command. Use `-ansi` to use the ANSI C standard and `-pedantic` for warnings. The `-g` flag will allow debugging with `gdb`.
 
-## Assignements
+## Assignments
 **Read** : https://tldp.org/LDP/intro-linux/html/sect_01_01.html [^1]
 
 **Read** : https://www.diffen.com/difference/Linux_vs_Unix [^1]
