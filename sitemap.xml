@@ -4,23 +4,38 @@
   
   <url>
     <loc>/cse2421tldr/</loc>
-    <lastmod>2020-01-15T02:30:11-05:00</lastmod>
+    <lastmod>2020-01-19T03:30:11-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/cse2421tldr/tags/c/</loc>
-    <lastmod>2020-01-15T02:30:11-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/cse2421tldr/posts/reading-pointers-on-c/</loc>
-    <lastmod>2020-01-15T02:30:11-05:00</lastmod>
+    <lastmod>2020-01-19T03:30:11-05:00</lastmod>
   </url>
   
   <url>
     <loc>/cse2421tldr/posts/</loc>
-    <lastmod>2020-01-15T02:30:11-05:00</lastmod>
+    <lastmod>2020-01-19T03:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/tags/</loc>
+    <lastmod>2020-01-19T03:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/posts/text-pointers-on-c-ch5/</loc>
+    <lastmod>2020-01-19T03:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/tags/build/</loc>
+    <lastmod>2020-01-19T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/posts/lecture-4/</loc>
+    <lastmod>2020-01-19T02:30:11-05:00</lastmod>
   </url>
   
   <url>
@@ -29,7 +44,7 @@
   </url>
   
   <url>
-    <loc>/cse2421tldr/tags/</loc>
+    <loc>/cse2421tldr/posts/text-pointers-on-c-ch14-copy/</loc>
     <lastmod>2020-01-15T02:30:11-05:00</lastmod>
   </url>
   
@@ -39,7 +54,7 @@
   </url>
   
   <url>
-    <loc>/cse2421tldr/posts/lecture-2/</loc>
+    <loc>/cse2421tldr/posts/lecture-3/</loc>
     <lastmod>2020-01-14T02:30:11-05:00</lastmod>
   </url>
   

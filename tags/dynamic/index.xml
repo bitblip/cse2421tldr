@@ -8,11 +8,11 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/dynamic/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Lecture 2</title>
-      <link>/cse2421tldr/posts/lecture-2/</link>
+      <title>Lecture 3</title>
+      <link>/cse2421tldr/posts/lecture-3/</link>
       <pubDate>Tue, 14 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>/cse2421tldr/posts/lecture-2/</guid>
+      <guid>/cse2421tldr/posts/lecture-3/</guid>
       <description>Intro To C Video : Intro To C
 Slides : Intro To C
 C is procedural, compiles to machine code that runs directly on the hardware. Direct manipulation of memory, no garbage collection. Memory leaks occur when memory is mismanaged.

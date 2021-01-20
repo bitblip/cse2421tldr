@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Lecture 4 :: CSE 2421 TL;DR</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lecture 4 Video : C Part 1
+Slides : C Part 1
+Compilation The way c programs are built.
+ Source file  $ gcc -o hello hello.c   Preprocessor  Collects .c and .h into .i file.   Compiler  Converts .i file into assembly language file .s.   Assembler  Converts .s into object file .o. Encoded instruction and data bit strings. Contains unresolved symbols.   Link Editor  Resolves unresolved symbols." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/cse2421tldr/posts/lecture-4/" />
+
+
+
+
+<link rel="stylesheet" href="/cse2421tldr/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="/cse2421tldr/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="/cse2421tldr/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Lecture 4">
+<meta property="og:description" content="C part 1" />
+<meta property="og:url" content="/cse2421tldr/posts/lecture-4/" />
+<meta property="og:site_name" content="CSE 2421 TL;DR" />
+
+  
+    <meta property="og:image" content="/cse2421tldr/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-01-19 02:30:11 -0500 -0500" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/cse2421tldr/">
+  <div class="logo">
+    CSE 2421 TL;DR
+  </div>
+</a>
+
+    </div>
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/cse2421tldr/posts/lecture-4/">Lecture 4</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-01-19 [Updated: 2020-01-19]
+      </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/cse2421tldr/tags/build/">build</a>&nbsp;
+    
+    #<a href="/cse2421tldr/tags/c/">c</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="lecture-4">Lecture 4<a href="#lecture-4" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p><strong>Video</strong> : <a href="https://urldefense.com/v3/__https:/osu.zoom.us/rec/share/Jj2iU3dMQcLFDfLXr4Z51XlWgMRZov_ziixoHpSon7D0rBmNsVZCUF4_iJa_F5_-.X8OlDXjS_OoEfRVW__;!!KGKeukY!isQP2wVmp9bUuofGZ9Mj-jmnROV7FIZejaUehGHaTN3c6IStDzp6oN9lsXQVKElk$">C Part 1</a></p>
+<p><strong>Slides</strong> : <a href="https://osu.instructure.com/courses/95904/files/folder/Zoom_Lectures/Class%20slides?preview=28361906">C Part 1</a></p>
+<h1 id="compilation">Compilation<a href="#compilation" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>The way c programs are built.</p>
+<ul>
+<li>Source file
+<ul>
+<li>$ <code>gcc -o hello hello.c</code></li>
+</ul>
+</li>
+<li>Preprocessor
+<ul>
+<li>Collects <code>.c</code> and <code>.h</code> into <code>.i</code> file.</li>
+</ul>
+</li>
+<li>Compiler
+<ul>
+<li>Converts <code>.i</code> file into assembly language file <code>.s</code>.</li>
+</ul>
+</li>
+<li>Assembler
+<ul>
+<li>Converts <code>.s</code> into object file <code>.o</code>. Encoded instruction and data bit strings. Contains unresolved symbols.</li>
+</ul>
+</li>
+<li>Link Editor
+<ul>
+<li>Resolves unresolved symbols. e.g. <code>printf()</code>. Creates c executable file specified by <code>-o</code> argument <strong>&ldquo;hello&rdquo;</strong> or <code>a.out</code> (default name).</li>
+</ul>
+</li>
+<li>Run program
+<ul>
+<li>$ <code>hello</code></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><code>printf()</code> remains resolved by the assembler to prevent assembling the same object multiple times.</p>
+</blockquote>
+<h1 id="basic-data-types">Basic Data Types<a href="#basic-data-types" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Only Integer and Floating Point are define. Same as available to the machine. Variable sizes can vary by system but are listed in strictly increasing size.</p>
+<ul>
+<li>
+<p>Integer Types</p>
+<ul>
+<li><code>char</code> (1 byte)</li>
+<li><code>short</code> (2 bytes)</li>
+<li><code>int</code> (4 bytes) (default)</li>
+<li><code>long</code> (8 bytes)</li>
+<li><code>long long</code> (8 or 16 bytes) (&gt;= C99)</li>
+</ul>
+</li>
+<li>
+<p>Floating Point Types</p>
+<ul>
+<li><code>float</code> (4 bytes)</li>
+<li><code>double</code> (8 bytes) (default)</li>
+<li><code>long double</code> (16 bytes) (&gt;= C99)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Only char is guaranteed to always be one byte, Others can vary by system.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>char</td>
+<td><code>'A'</code> <code>'B'</code></td>
+</tr>
+<tr>
+<td>int</td>
+<td><code>123</code> <code>-1</code> <code>15348564158</code> <code>040</code> <code>0xab</code></td>
+</tr>
+<tr>
+<td>unsigned int</td>
+<td><code>123u</code> <code>2107433648</code> <code>040U</code> <code>0X02</code></td>
+</tr>
+<tr>
+<td>long</td>
+<td><code>123L</code> <code>0x1FFFl</code></td>
+</tr>
+<tr>
+<td>unsigned long</td>
+<td><code>123ul</code> <code>0777UL</code></td>
+</tr>
+<tr>
+<td>float</td>
+<td><code>1.23F</code> <code>3.15e+0f</code></td>
+</tr>
+<tr>
+<td>double</td>
+<td><code>1.23</code> <code>2.718281828</code></td>
+</tr>
+<tr>
+<td>long double</td>
+<td><code>1.23L</code> <code>9.99E-9L</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="derived-types">Derived Types<a href="#derived-types" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Potentially infinite kinds of derived types built from Integer and Floating Point types.</p>
+<ul>
+<li><code>arrays</code></li>
+<li><code>pointers</code></li>
+<li><code>structures</code> - sequence of various objects, variables, and or derived types</li>
+<li><code>unions</code> - not sure about this one</li>
+</ul>
+<h2 id="constants">Constants<a href="#constants" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Defined with keyword <code>const</code>. Limited variable that can only be assigned once where variable assignment is allowed.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">float</span> <span style="color:#66d9ef">const</span> PI <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.141593f</span>; <span style="color:#75715e">/*double is default, use f for float*/</span>
+<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">float</span> PI <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.141593f</span>;
+</code></pre></div><h3 id="symbolic-constants">Symbolic Constants<a href="#symbolic-constants" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>A name that substitutes for a value that cannot be changed. Convent is all upper case.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#define PI 3.141593
+</span><span style="color:#75715e">#define AREA (PI*r*r)
+</span><span style="color:#75715e">#define TRUE 1
+</span></code></pre></div><h2 id="variable-declarations">Variable Declarations<a href="#variable-declarations" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Valid identifiers are a-z, A-Z, 0-9, _. Beginning with _ is conventionally for system variables. Camel case is acceptable, historically _ word separators were used. Be consistent. Only 32 character identifiers are guaranteed to be supported, longer identifiers may be truncated.</p>
+<p>You can declare and assign multiple variables in the same statement.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> i,j <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>,k;
+<span style="color:#66d9ef">char</span> code, category;
+<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">123</span>;
+</code></pre></div><blockquote>
+<p>Be consistent, be consistent, be consistent</p>
+</blockquote>
+<h2 id="type-conversion">Type conversion<a href="#type-conversion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Explicit cast with (type). Avoid casting large types to smaller types. See Basic Data Types for size ordering.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">65</span>;
+<span style="color:#66d9ef">char</span> ch <span style="color:#f92672">=</span> (<span style="color:#66d9ef">char</span>)i; <span style="color:#75715e">/* ch = &#34;A&#34; */</span>
+</code></pre></div><blockquote>
+<p>Use descriptive variable names that imply types and purpose. C is already demanding enough to code without adding ambiguous variable names. e.g. i, j, ch.</p>
+</blockquote>
+<h1 id="keywords">Keywords<a href="#keywords" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>The follow are reserved identifiers that cannot be used as identifiers.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>auto</td>
+<td>double</td>
+<td>int</td>
+<td>struct</td>
+</tr>
+<tr>
+<td>break</td>
+<td>else</td>
+<td>long</td>
+<td>switch</td>
+</tr>
+<tr>
+<td>case</td>
+<td>enum</td>
+<td>register</td>
+<td>typedef</td>
+</tr>
+<tr>
+<td>char</td>
+<td>extern</td>
+<td>return</td>
+<td>union</td>
+</tr>
+<tr>
+<td>const</td>
+<td>float</td>
+<td>short</td>
+<td>unsigned</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>for</td>
+<td>signed</td>
+<td>void</td>
+</tr>
+<tr>
+<td>default</td>
+<td>goto</td>
+<td>sizeof</td>
+<td>volatile</td>
+</tr>
+<tr>
+<td>do</td>
+<td>if</td>
+<td>static</td>
+<td>while</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assignment">Assignment<a href="#assignment" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><strong>Read</strong> : Pointers on C, Chapter 5 through 5.1.3 and 5.3 to the end of the chapter.</p>
+<p><strong>Read</strong> : Computer Systems, Chapter 1 through 1.3.</p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/cse2421tldr/posts/text-pointers-on-c-ch5/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Text: Pointers On C (4_C_Part_1)</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/cse2421tldr/posts/text-pointers-on-c-ch14-copy/">
+                <span class="button__text">Text: Pointers On C (3_Intro_To_C)</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2021 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/cse2421tldr/assets/main.js"></script>
+<script src="/cse2421tldr/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

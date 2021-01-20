@@ -6,23 +6,44 @@
     <description>Recent content in Posts on CSE 2421 TL;DR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jan 2020 03:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Pointers On C</title>
-      <link>/cse2421tldr/posts/reading-pointers-on-c/</link>
+      <title>Text: Pointers On C (4_C_Part_1)</title>
+      <link>/cse2421tldr/posts/text-pointers-on-c-ch5/</link>
+      <pubDate>Sun, 19 Jan 2020 03:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/text-pointers-on-c-ch5/</guid>
+      <description>Operators and Expressions </description>
+    </item>
+    
+    <item>
+      <title>Lecture 4</title>
+      <link>/cse2421tldr/posts/lecture-4/</link>
+      <pubDate>Sun, 19 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-4/</guid>
+      <description>Lecture 4 Video : C Part 1
+Slides : C Part 1
+Compilation The way c programs are built.
+ Source file  $ gcc -o hello hello.c   Preprocessor  Collects .c and .h into .i file.   Compiler  Converts .i file into assembly language file .s.   Assembler  Converts .s into object file .o. Encoded instruction and data bit strings. Contains unresolved symbols.   Link Editor  Resolves unresolved symbols.</description>
+    </item>
+    
+    <item>
+      <title>Text: Pointers On C (3_Intro_To_C)</title>
+      <link>/cse2421tldr/posts/text-pointers-on-c-ch14-copy/</link>
       <pubDate>Wed, 15 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>/cse2421tldr/posts/reading-pointers-on-c/</guid>
+      <guid>/cse2421tldr/posts/text-pointers-on-c-ch14-copy/</guid>
       <description>The Preprocessor First step in compiling. Removes comments, inserts #include contents, substitutes #define symbols, and processes conditional compilation directives.
 Predefined symbols    Symbol Sample Value Meaning     __FILE__ &amp;ldquo;name.c&amp;rdquo; Name of the source file being compiled.   __LINE__ 25 Line number of the current line in the file.   __DATE__ &amp;ldquo;Jan 1 2020&amp;rdquo; Date the file was compiled.   __TIME__ &amp;ldquo;18:04:30&amp;rdquo; Time that the file was compiled.</description>
     </item>
     
     <item>
-      <title>Lecture 2</title>
-      <link>/cse2421tldr/posts/lecture-2/</link>
+      <title>Lecture 3</title>
+      <link>/cse2421tldr/posts/lecture-3/</link>
       <pubDate>Tue, 14 Jan 2020 02:30:11 -0500</pubDate>
       
-      <guid>/cse2421tldr/posts/lecture-2/</guid>
+      <guid>/cse2421tldr/posts/lecture-3/</guid>
       <description>Intro To C Video : Intro To C
 Slides : Intro To C
 C is procedural, compiles to machine code that runs directly on the hardware. Direct manipulation of memory, no garbage collection. Memory leaks occur when memory is mismanaged.
@@ -31,7 +52,7 @@ C does NOT  Classes/Objects (n the OOP sense) Encapsulation Inheritance Not obje
     </item>
     
     <item>
-      <title>Lecture 1</title>
+      <title>Lecture 1 and 2</title>
       <link>/cse2421tldr/posts/lecture-1/</link>
       <pubDate>Sun, 12 Jan 2020 02:30:11 -0500</pubDate>
       

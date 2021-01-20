@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-    <title>Pointers On C :: CSE 2421 TL;DR</title>
+    <title>Text: Pointers On C (3_Intro_To_C) :: CSE 2421 TL;DR</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 Predefined symbols    Symbol Sample Value Meaning     __FILE__ &amp;ldquo;name.c&amp;rdquo; Name of the source file being compiled.   __LINE__ 25 Line number of the current line in the file.   __DATE__ &amp;ldquo;Jan 1 2020&amp;rdquo; Date the file was compiled.   __TIME__ &amp;ldquo;18:04:30&amp;rdquo; Time that the file was compiled." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="/cse2421tldr/posts/reading-pointers-on-c/" />
+<link rel="canonical" href="/cse2421tldr/posts/text-pointers-on-c-ch14-copy/" />
 
 
 
@@ -39,9 +39,9 @@ Predefined symbols    Symbol Sample Value Meaning     __FILE__ &amp;ldquo;name.c
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Pointers On C">
+<meta property="og:title" content="Text: Pointers On C (3_Intro_To_C)">
 <meta property="og:description" content="Chapter 14, The Preprocessor (omit 14.5)" />
-<meta property="og:url" content="/cse2421tldr/posts/reading-pointers-on-c/" />
+<meta property="og:url" content="/cse2421tldr/posts/text-pointers-on-c-ch14-copy/" />
 <meta property="og:site_name" content="CSE 2421 TL;DR" />
 
   
@@ -91,7 +91,7 @@ Predefined symbols    Symbol Sample Value Meaning     __FILE__ &amp;ldquo;name.c
     
 <div class="post">
   <h1 class="post-title">
-    <a href="/cse2421tldr/posts/reading-pointers-on-c/">Pointers On C</a></h1>
+    <a href="/cse2421tldr/posts/text-pointers-on-c-ch14-copy/">Text: Pointers On C (3_Intro_To_C)</a></h1>
   <div class="post-meta">
     
       <span class="post-date">
@@ -221,7 +221,7 @@ WEIRD_DYNAMIC_VAR_ASSIGNMENT(<span style="color:#ae81ff">5</span>, <span style="
 </span></code></pre></div><h3 id="library-and-local-includes">Library and local includes<a href="#library-and-local-includes" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
 <p>Use angle brackets <code>&lt;filename&gt;</code> and double quotes <code>&quot;filename&quot;</code> to differentiate library and local includes.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;myfile.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;myFile.h&#34;</span><span style="color:#75715e">
 </span></code></pre></div><p>Included files may themselves contain include statements. The Standard requires at least 8 levels of nested <code>#include</code> statements but does not specify a maximum. Convention dictates that there is little reason for more than two.</p>
 <p>Complex programs may inadvertency cause the same file to be included multiple times. Use conditional compilation as a work around.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#ifndef _SOMEHEADER_H
@@ -240,10 +240,17 @@ WEIRD_DYNAMIC_VAR_ASSIGNMENT(<span style="color:#ae81ff">5</span>, <span style="
     </div>
     <div class="pagination__buttons">
         
+        <span class="button previous">
+            <a href="/cse2421tldr/posts/lecture-4/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Lecture 4</span>
+            </a>
+        </span>
+        
         
         <span class="button next">
-            <a href="/cse2421tldr/posts/lecture-2/">
-                <span class="button__text">Lecture 2</span>
+            <a href="/cse2421tldr/posts/lecture-3/">
+                <span class="button__text">Lecture 3</span>
                 <span class="button__icon">→</span>
             </a>
         </span>
