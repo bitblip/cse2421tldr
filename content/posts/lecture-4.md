@@ -2,7 +2,7 @@
 title: "Lecture 4"
 date: 2020-01-19T02:30:11-05:00
 description : "C part 1"
-tags: ["build", "c"]
+tags: ["build", "types", "c"]
 ---
 
 # Lecture 4
