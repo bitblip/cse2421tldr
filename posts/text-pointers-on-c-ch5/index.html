@@ -6,7 +6,13 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Operators and Expressions " />
+<meta name="description" content="Assignment Read chapter 5 through 5.1.3; 5.3 to end of chapter
+Operators and Expressions C has numerous operators, many unavailable in other languages.
+Arithmetic &#43; - * / %
+Work one floating-pont and integers types, except %.
+/ truncates when both operands are integers, floating-point otherwise..
+% divides the left integer operand by the right integer operand and returns the remainder.
+Shifting Slide the bits in a value left or right." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/cse2421tldr/posts/text-pointers-on-c-ch5/" />
@@ -103,6 +109,8 @@
   
   <span class="post-tags">
     
+    #<a href="/cse2421tldr/tags/operators/">operators</a>&nbsp;
+    
     #<a href="/cse2421tldr/tags/c/">c</a>&nbsp;
     
   </span>
@@ -113,7 +121,60 @@
   
 
   <div class="post-content"><div>
-        <h1 id="operators-and-expressions">Operators and Expressions<a href="#operators-and-expressions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+        <h1 id="assignment">Assignment<a href="#assignment" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Read chapter 5 through 5.1.3; 5.3 to end of chapter</p>
+<h1 id="operators-and-expressions">Operators and Expressions<a href="#operators-and-expressions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>C has numerous operators, many unavailable in other languages.</p>
+<h2 id="arithmetic">Arithmetic<a href="#arithmetic" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><code>+</code> <code>-</code> <code>*</code> <code>/</code> <code>%</code></p>
+<p>Work one floating-pont and integers types, except <code>%</code>.</p>
+<p><code>/</code> truncates when both operands are integers, floating-point otherwise..</p>
+<p><code>%</code> divides the left integer operand by the right integer operand and returns the remainder.</p>
+<h2 id="shifting">Shifting<a href="#shifting" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Slide the bits in a value left or right. The number of shifts is specified by the argument following the operator.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">a <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">5</span>;
+</code></pre></div><h3 id="left-shift">Left Shift<a href="#left-shift" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p><code>&lt;&lt;</code> The left most bits is discarded and a zero is placed into the right most bit.</p>
+<h3 id="right-shift">Right Shift<a href="#right-shift" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Two kinds of right shifts that differ for negative values.</p>
+<p><strong>logical shift</strong> The right most bit is discarded and a zero is placed into the left most bit.</p>
+<p><strong>arithmetic shift</strong> The right most bit is discarded and the sign bit is placed into the left most bit.</p>
+<blockquote>
+<p>No standard for shifts using signed values, maybe be <strong>logical</strong> or <strong>arithmetic</strong>. No guarantees across compilers. Thus, <code>a &lt;&lt; -5</code> is inherently non-portable.</p>
+</blockquote>
+<h2 id="bitwise">Bitwise<a href="#bitwise" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Logical AND <code>&amp;</code>, OR <code>|</code>, and XOR <code>^</code> (exclusive-OR) operations. Bitwise operands are integers and are compared one pair of bits at a time.</p>
+<p><code>&amp;</code> returns one if both operands are one, zero otherwise.</p>
+<p><code>|</code> returns zero if both operands are zero, one otherwise.</p>
+<p><code>^</code> returns one if both operands are different, zero otherwise.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#ae81ff">00101110</span> <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">01011011</span> <span style="color:#75715e">/* 00001010 */</span>
+<span style="color:#ae81ff">00101110</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">01011011</span> <span style="color:#75715e">/* 01111111 */</span>
+<span style="color:#ae81ff">00101110</span> <span style="color:#f92672">^</span> <span style="color:#ae81ff">01011011</span> <span style="color:#75715e">/* 01110101 */</span>
+</code></pre></div><h2 id="bit-manipulation">Bit Manipulation<a href="#bit-manipulation" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Set the specified bit to one</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">value <span style="color:#f92672">=</span> value <span style="color:#f92672">|</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;&lt;</span> bit_number;
+</code></pre></div><p>Tests the specified bit and is nonzero if the bit is set.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">value <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;&lt;</span> bit_number
+</code></pre></div><h1 id="l-values-and-r-values">L-values and R-values<a href="#l-values-and-r-values" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p><strong>L-value</strong> is something that can appear on the left side of an <code>=</code> sign and <strong>R-values</strong> appear on the right.</p>
+<h1 id="expression-evaluation">Expression Evaluation<a href="#expression-evaluation" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>The order of expression evaluation depends on precedence, associativity, and type conversion.</p>
+<h2 id="implicit-type-conversion">Implicit Type Conversion<a href="#implicit-type-conversion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Integer arithmetic at least defaults to the default, <code>integer</code>. <code>char</code> and <code>short</code> are converted to <code>integer</code>.</p>
+<h2 id="arithmetic-conversion">Arithmetic Conversion<a href="#arithmetic-conversion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Operands of different types must be converted to the same type. The operand who&rsquo;s type is lower in this list is converted to the higher type.</p>
+<ul>
+<li><code>long double</code></li>
+<li><code>double</code></li>
+<li><code>float</code></li>
+<li><code>unsigned long int</code></li>
+<li><code>unsigned int</code></li>
+<li><code>int</code></li>
+</ul>
+<h2 id="precedence-and-order-of-evaluation">Precedence and Order of Evaluation<a href="#precedence-and-order-of-evaluation" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<blockquote>
+<p>The order of evaluation of two adjacent operators is determined by their precedence. If they have the same precedence, the order is determined by their associativity. Otherwise, the compile is free to evaluate expressions in any order that does not violate the order of evaluation imposed by parenthesis or by the comma, <code>&amp;&amp;</code>, <code>||</code>, or <code>?:</code> operators.</p>
+</blockquote>
 
       </div></div>
 

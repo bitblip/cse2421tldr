@@ -13,7 +13,13 @@
       <pubDate>Sun, 19 Jan 2020 03:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/posts/text-pointers-on-c-ch5/</guid>
-      <description>Operators and Expressions </description>
+      <description>Assignment Read chapter 5 through 5.1.3; 5.3 to end of chapter
+Operators and Expressions C has numerous operators, many unavailable in other languages.
+Arithmetic + - * / %
+Work one floating-pont and integers types, except %.
+/ truncates when both operands are integers, floating-point otherwise..
+% divides the left integer operand by the right integer operand and returns the remainder.
+Shifting Slide the bits in a value left or right.</description>
     </item>
     
     <item>
