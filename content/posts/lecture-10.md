@@ -1,6 +1,6 @@
 ---
 title: "Lecture 10"
-date: 2020-01-26T02:30:11-05:00
+date: 2020-01-28T02:30:11-05:00
 description : "C Pointers Part 2"
 tags: ["pointers", "memory management", "c"]
 ---

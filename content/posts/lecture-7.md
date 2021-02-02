@@ -1,6 +1,6 @@
 ---
 title: "Lecture 7"
-date: 2020-01-19T02:30:11-05:00
+date: 2020-01-21T02:30:11-05:00
 description : "C part 4 Redirection"
 tags: ["c"]
 ---

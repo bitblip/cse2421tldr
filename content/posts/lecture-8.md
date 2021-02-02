@@ -1,6 +1,6 @@
 ---
 title: "Lecture 8"
-date: 2020-01-26T02:30:11-05:00
+date: 2020-01-21T02:30:11-05:00
 description : "C part 5 Control Structures"
 tags: ["loops", "c"]
 ---

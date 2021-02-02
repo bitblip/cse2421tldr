@@ -1,6 +1,6 @@
 ---
 title: "Lecture 6"
-date: 2020-01-19T02:30:11-05:00
+date: 2020-01-21T02:30:11-05:00
 description : "C part 3 IO"
 tags: ["i/o", "formatting", "c"]
 ---
