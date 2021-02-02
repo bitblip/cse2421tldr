@@ -6,29 +6,20 @@
     <description>Recent content in Tags on CSE 2421 TL;DR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>c</title>
       <link>/cse2421tldr/tags/c/</link>
-      <pubDate>Sun, 26 Jan 2020 02:30:11 -0500</pubDate>
+      <pubDate>Tue, 28 Jan 2020 02:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/tags/c/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>loops</title>
-      <link>/cse2421tldr/tags/loops/</link>
-      <pubDate>Sun, 26 Jan 2020 02:30:11 -0500</pubDate>
-      
-      <guid>/cse2421tldr/tags/loops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>memory management</title>
       <link>/cse2421tldr/tags/memory-management/</link>
-      <pubDate>Sun, 26 Jan 2020 02:30:11 -0500</pubDate>
+      <pubDate>Tue, 28 Jan 2020 02:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/tags/memory-management/</guid>
       <description></description>
@@ -37,9 +28,27 @@
     <item>
       <title>pointers</title>
       <link>/cse2421tldr/tags/pointers/</link>
-      <pubDate>Sun, 26 Jan 2020 02:30:11 -0500</pubDate>
+      <pubDate>Tue, 28 Jan 2020 02:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/tags/pointers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>formatting</title>
+      <link>/cse2421tldr/tags/formatting/</link>
+      <pubDate>Tue, 21 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/tags/formatting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>loops</title>
+      <link>/cse2421tldr/tags/loops/</link>
+      <pubDate>Tue, 21 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/tags/loops/</guid>
       <description></description>
     </item>
     
@@ -58,15 +67,6 @@
       <pubDate>Sun, 19 Jan 2020 02:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/tags/build/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>formatting</title>
-      <link>/cse2421tldr/tags/formatting/</link>
-      <pubDate>Sun, 19 Jan 2020 02:30:11 -0500</pubDate>
-      
-      <guid>/cse2421tldr/tags/formatting/</guid>
       <description></description>
     </item>
     

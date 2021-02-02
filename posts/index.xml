@@ -6,30 +6,17 @@
     <description>Recent content in Posts on CSE 2421 TL;DR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lecture 10</title>
       <link>/cse2421tldr/posts/lecture-10/</link>
-      <pubDate>Sun, 26 Jan 2020 02:30:11 -0500</pubDate>
+      <pubDate>Tue, 28 Jan 2020 02:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/posts/lecture-10/</guid>
       <description>Lecture 10 Video : C Pointers 2 Part A Video : C Pointers 2 Part B
 Slides : C Pointers Part 2
 Pointers part 2 Relationship between arrays and pointers, void pointers, dynamic memory, pointer arithmetic, and passing pointers.
 Arrays Arrays can only be accessed by pointers. Static arrays are allocated by the compiler, dynamic arrays must be allocated with malloc at runtime and will be referenced by a void pointer.</description>
-    </item>
-    
-    <item>
-      <title>Lecture 8</title>
-      <link>/cse2421tldr/posts/lecture-8/</link>
-      <pubDate>Sun, 26 Jan 2020 02:30:11 -0500</pubDate>
-      
-      <guid>/cse2421tldr/posts/lecture-8/</guid>
-      <description>Lecture 6 Video : C Part 5 Control Structure
-Slides : C Part 5 Control Structure
-Loop Constructs Best practice is to always use {} for clarity. 1 line loop bodies without {} will be deducted points.
-for (expression1, expression2; expression3) { ... }  Variables cannot be initializes in expression1. i.e. int i = 0. Only i = 0 is allowed in expression1.
- while (expression) { ... } do while will always execute at least once.</description>
     </item>
     
     <item>
@@ -42,6 +29,45 @@ for (expression1, expression2; expression3) { ... }  Variables cannot be initial
 Slides : C Pointers Part 1
 Pointers All variables have an address. This identifies the location in memory of the value of the variable. On 64bit systems, the address is an 8-byte integer. Memory addresses can range from 0 up to the size of memory in bytes - 1.
 A variable name is known as the identifier and the value is stored at the identifiers address.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 6</title>
+      <link>/cse2421tldr/posts/lecture-6/</link>
+      <pubDate>Tue, 21 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-6/</guid>
+      <description>Lecture 6 Video : C Part 3 IO
+Slides : C Part 3 IO
+Assignment Read Pointers on C, 15.8, 15.8.1, 15.10 through 15.10.4 inclusive.
+ I/O No standard Input/Output defined in language, use &amp;lt;stdio.h&amp;gt;. Linux/Unix use ASCII, course will also use ASCII.  Character I/O Return integer ASCII characters. Must be cast to char or printed with &amp;quot;%c&amp;quot;. Can return EOF.
+int getchar(void) int putchar(int) int scanf(char const *format, $params.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 7</title>
+      <link>/cse2421tldr/posts/lecture-7/</link>
+      <pubDate>Tue, 21 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-7/</guid>
+      <description>Lecture 6 Video : C Part 4 Redirection
+Slides : C Part 4 Redirection
+Redirection 3 distinct data streams: stdin(0) stdout(1) stderr(2). Unix/Linux default to keyboard, screen, and screen respectively.
+This can be changed with the command line.
+ &amp;lt; input &amp;gt; output 2&amp;gt; error  prog1 &amp;lt; infile &amp;gt; outfile 2&amp;gt; outErrorFile  Input files must end with EOL. This is a blank line at the end of the file.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 8</title>
+      <link>/cse2421tldr/posts/lecture-8/</link>
+      <pubDate>Tue, 21 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-8/</guid>
+      <description>Lecture 6 Video : C Part 5 Control Structure
+Slides : C Part 5 Control Structure
+Loop Constructs Best practice is to always use {} for clarity. 1 line loop bodies without {} will be deducted points.
+for (expression1, expression2; expression3) { ... }  Variables cannot be initializes in expression1. i.e. int i = 0. Only i = 0 is allowed in expression1.
+ while (expression) { ... } do while will always execute at least once.</description>
     </item>
     
     <item>
@@ -83,32 +109,6 @@ Lvalue Must be modifiable. Represents a register/memory location.
 Rvalue Constants, expressions, return value from a function, etc.
 Operator Operators operate on operands. Operands are expressions that have a type and have return a value that is a type.
 Precedence and Associativity (P&amp;amp;A) Between two operators, which takes precedence. Binary relation, defined relative to two adjacent operators.</description>
-    </item>
-    
-    <item>
-      <title>Lecture 6</title>
-      <link>/cse2421tldr/posts/lecture-6/</link>
-      <pubDate>Sun, 19 Jan 2020 02:30:11 -0500</pubDate>
-      
-      <guid>/cse2421tldr/posts/lecture-6/</guid>
-      <description>Lecture 6 Video : C Part 3 IO
-Slides : C Part 3 IO
-Assignment Read Pointers on C, 15.8, 15.8.1, 15.10 through 15.10.4 inclusive.
- I/O No standard Input/Output defined in language, use &amp;lt;stdio.h&amp;gt;. Linux/Unix use ASCII, course will also use ASCII.  Character I/O Return integer ASCII characters. Must be cast to char or printed with &amp;quot;%c&amp;quot;. Can return EOF.
-int getchar(void) int putchar(int) int scanf(char const *format, $params.</description>
-    </item>
-    
-    <item>
-      <title>Lecture 7</title>
-      <link>/cse2421tldr/posts/lecture-7/</link>
-      <pubDate>Sun, 19 Jan 2020 02:30:11 -0500</pubDate>
-      
-      <guid>/cse2421tldr/posts/lecture-7/</guid>
-      <description>Lecture 6 Video : C Part 4 Redirection
-Slides : C Part 4 Redirection
-Redirection 3 distinct data streams: stdin(0) stdout(1) stderr(2). Unix/Linux default to keyboard, screen, and screen respectively.
-This can be changed with the command line.
- &amp;lt; input &amp;gt; output 2&amp;gt; error  prog1 &amp;lt; infile &amp;gt; outfile 2&amp;gt; outErrorFile  Input files must end with EOL. This is a blank line at the end of the file.</description>
     </item>
     
     <item>
