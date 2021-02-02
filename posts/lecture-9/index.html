@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Lecture 9 :: CSE 2421 TL;DR</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lecture 6 Video : C Pointers 1 Part A Video : C Pointers 1 Part B
+Slides : C Pointers Part 1
+Pointers All variables have an address. This identifies the location in memory of the value of the variable. On 64bit systems, the address is an 8-byte integer. Memory addresses can range from 0 up to the size of memory in bytes - 1.
+A variable name is known as the identifier and the value is stored at the identifiers address." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/cse2421tldr/posts/lecture-9/" />
+
+
+
+
+<link rel="stylesheet" href="/cse2421tldr/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="/cse2421tldr/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="/cse2421tldr/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Lecture 9">
+<meta property="og:description" content="C pointers Part 1" />
+<meta property="og:url" content="/cse2421tldr/posts/lecture-9/" />
+<meta property="og:site_name" content="CSE 2421 TL;DR" />
+
+  
+    <meta property="og:image" content="/cse2421tldr/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-01-26 02:30:11 -0500 -0500" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/cse2421tldr/">
+  <div class="logo">
+    CSE 2421 TL;DR
+  </div>
+</a>
+
+    </div>
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/cse2421tldr/posts/lecture-9/">Lecture 9</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-01-26 [Updated: 2020-01-26]
+      </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/cse2421tldr/tags/pointers/">pointers</a>&nbsp;
+    
+    #<a href="/cse2421tldr/tags/c/">c</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="lecture-6">Lecture 6<a href="#lecture-6" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p><strong>Video</strong> : <a href="https://urldefense.com/v3/__https:/osu.zoom.us/rec/share/1cH0fwe-6AaW6vblfsNwSgH8ecfA5YTHiY-aDQh73KWvlhW7-wrY7Zb5OY9-ujWL.NlyWX9aexZfwF0vh__;!!KGKeukY!g0HVicmbD96-kMBf6C0Y6yeIBc6PxYEnXHwqREwc2_xHUHentdY3mZguAaV9ofIi$">C Pointers 1 Part A</a>
+<strong>Video</strong> : <a href="https://urldefense.com/v3/__https:/osu.zoom.us/rec/share/jHawEDCjBdpIoDa8Z-hTOtSFMjuV08B6Zvh72uakOt-t1cyK60tUU_oDdqZN3EK9.oJcDVykGNjeBAhsH__;!!KGKeukY!jJ1CqAWnDNR1E4qfBxZ2Px7AooNk-vvhjAWMgVGoEqeYijyVP3y-zrKFlv6cy8_p$">C Pointers 1 Part B</a></p>
+<p><strong>Slides</strong> : <a href="https://osu.instructure.com/courses/95904/files/folder/Zoom%20classes?preview=28800173">C Pointers Part 1</a></p>
+<h1 id="pointers">Pointers<a href="#pointers" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>All variables have an address. This identifies the location in memory of the value of the variable. On 64bit systems, the address is an 8-byte integer. Memory addresses can range from 0 up to the size of memory in bytes - 1.</p>
+<p>A variable name is known as the identifier and the value is stored at the identifiers address. The mapping is maintained by the <code>symbol table</code>.</p>
+<p>A <code>pointer</code> is a variable or constant that contains the address of another variable. <code>pointer</code> is not a type.</p>
+<blockquote>
+<p>This address can be called <code>a reference</code> but is usually not so in C terminology.</p>
+</blockquote>
+<p>Pointers are denoted by the deference operation <code>*</code> prefix. Addresses are retrieved from variables by the address operator <code>&amp;</code> prefix. These operators are part of the identifer, <strong>NOT</strong> the type. A pointer expression can be read as &ldquo;dereference&rdquo;. For example, <code>char *c;</code> can be read as <code>char dereference c</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> b;
+<span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>int_ptr;
+int_ptr <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>b;
+</code></pre></div><p>Pointer types, <code>int*</code>, <code>byte*</code>, <code>char*</code>, &hellip; etc, are critical in informing the compiler how the bytes at an address are encoded. Type mismatches will have very unpredictable behaviors.</p>
+<blockquote>
+<p>The compiler is horrible at guessing types of data.</p>
+</blockquote>
+<h1 id="printing-the-value-a-pointer-references">Printing the value a pointer references.<a href="#printing-the-value-a-pointer-references" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Use indirection <code>*C</code>. This is an indirect way to access the value of B.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> B <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>;
+<span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>C <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>B;
+
+printf(<span style="color:#e6db74">&#34;%i&#34;</span>, B)
+printf(<span style="color:#e6db74">&#34;%i&#34;</span>, <span style="color:#f92672">*</span>C) <span style="color:#75715e">/* *C is a variable, not a pointer operator? */</span>
+</code></pre></div><p>A way to think about <code>&amp;</code> and <code>*</code>.</p>
+<p><code>&amp;</code> = GetAddressOfIdentifier(var)
+<code>*</code> = GetValueAtAddress(var)
+<code>*</code> = SetValueAtAddress(var)</p>
+<h1 id="pointers-to-pointers">Pointers to pointers<a href="#pointers-to-pointers" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>An integer pointer to an integer pointer, or more simply said, an int pointer pointer.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> <span style="color:#f92672">**</span>x;
+</code></pre></div><h1 id="pointer-castings">Pointer Castings<a href="#pointer-castings" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Pointer types can be recast. Remember that pointer type determine memory size operations. <code>char</code> is 1 byte and <code>int</code> is 4 bytes.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>y <span style="color:#f92672">=</span> (<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>)(<span style="color:#f92672">&amp;</span>i);
+</code></pre></div>
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/cse2421tldr/posts/lecture-8/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Lecture 8</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/cse2421tldr/posts/text-pointers-on-c-ch5/">
+                <span class="button__text">Text: Pointers On C (4_C_Part_1)</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2021 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/cse2421tldr/assets/main.js"></script>
+<script src="/cse2421tldr/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

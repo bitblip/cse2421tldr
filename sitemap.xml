@@ -4,27 +4,57 @@
   
   <url>
     <loc>/cse2421tldr/</loc>
-    <lastmod>2020-01-19T03:30:11-05:00</lastmod>
+    <lastmod>2020-01-26T02:30:11-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/cse2421tldr/tags/c/</loc>
-    <lastmod>2020-01-19T03:30:11-05:00</lastmod>
+    <lastmod>2020-01-26T02:30:11-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/cse2421tldr/tags/operators/</loc>
-    <lastmod>2020-01-19T03:30:11-05:00</lastmod>
+    <loc>/cse2421tldr/posts/lecture-10/</loc>
+    <lastmod>2020-01-26T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/posts/lecture-8/</loc>
+    <lastmod>2020-01-26T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/posts/lecture-9/</loc>
+    <lastmod>2020-01-26T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/tags/loops/</loc>
+    <lastmod>2020-01-26T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/tags/memory-management/</loc>
+    <lastmod>2020-01-26T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/tags/pointers/</loc>
+    <lastmod>2020-01-26T02:30:11-05:00</lastmod>
   </url>
   
   <url>
     <loc>/cse2421tldr/posts/</loc>
-    <lastmod>2020-01-19T03:30:11-05:00</lastmod>
+    <lastmod>2020-01-26T02:30:11-05:00</lastmod>
   </url>
   
   <url>
     <loc>/cse2421tldr/tags/</loc>
+    <lastmod>2020-01-26T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/tags/operators/</loc>
     <lastmod>2020-01-19T03:30:11-05:00</lastmod>
   </url>
   
@@ -39,7 +69,32 @@
   </url>
   
   <url>
+    <loc>/cse2421tldr/tags/formatting/</loc>
+    <lastmod>2020-01-19T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/cse2421tldr/posts/lecture-4/</loc>
+    <lastmod>2020-01-19T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/posts/lecture-5/</loc>
+    <lastmod>2020-01-19T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/posts/lecture-6/</loc>
+    <lastmod>2020-01-19T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/posts/lecture-7/</loc>
+    <lastmod>2020-01-19T02:30:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/tags/precedence/</loc>
     <lastmod>2020-01-19T02:30:11-05:00</lastmod>
   </url>
   
@@ -90,6 +145,10 @@
   
   <url>
     <loc>/cse2421tldr/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/cse2421tldr/tags/i/o/</loc>
   </url>
   
 </urlset>

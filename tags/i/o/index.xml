@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>i/o on CSE 2421 TL;DR</title>
+    <link>/cse2421tldr/tags/i/o/</link>
+    <description>Recent content in i/o on CSE 2421 TL;DR</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/cse2421tldr/tags/i/o/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture 6</title>
+      <link>/cse2421tldr/posts/lecture-6/</link>
+      <pubDate>Sun, 19 Jan 2020 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-6/</guid>
+      <description>Lecture 6 Video : C Part 3 IO
+Slides : C Part 3 IO
+Assignment Read Pointers on C, 15.8, 15.8.1, 15.10 through 15.10.4 inclusive.
+ I/O No standard Input/Output defined in language, use &amp;lt;stdio.h&amp;gt;. Linux/Unix use ASCII, course will also use ASCII.  Character I/O Return integer ASCII characters. Must be cast to char or printed with &amp;quot;%c&amp;quot;. Can return EOF.
+int getchar(void) int putchar(int) int scanf(char const *format, $params.</description>
+    </item>
+    
+  </channel>
+</rss>
