@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>design on CSE 2421 TL;DR</title>
+    <link>/cse2421tldr/tags/design/</link>
+    <description>Recent content in design on CSE 2421 TL;DR</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Jan 2021 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture 11</title>
+      <link>/cse2421tldr/posts/lecture-11/</link>
+      <pubDate>Sat, 02 Jan 2021 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-11/</guid>
+      <description>Lecture 11 Video : Software Design Principles in C
+Slides : Software Design Principles in C
+Communication Give users precise prompts such as type and formatting such as spaces, tabs, and new lines. Describe outputs with good labels.
+Structure  # include directives # define directives Function prototypes main  Variable declarations Calls to other functions No work should occur inside main.   Function definitions  Reusable components Functions should provide a single piece of functionality that is reasonably likely to be useful in other programs.</description>
+    </item>
+    
+  </channel>
+</rss>

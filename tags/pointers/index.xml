@@ -25,7 +25,7 @@ Arrays Arrays can only be accessed by pointers. Static arrays are allocated by t
       <pubDate>Sun, 26 Jan 2020 02:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/posts/lecture-9/</guid>
-      <description>Lecture 6 Video : C Pointers 1 Part A Video : C Pointers 1 Part B
+      <description>Lecture 9 Video : C Pointers 1 Part A Video : C Pointers 1 Part B
 Slides : C Pointers Part 1
 Pointers All variables have an address. This identifies the location in memory of the value of the variable. On 64bit systems, the address is an 8-byte integer. Memory addresses can range from 0 up to the size of memory in bytes - 1.
 A variable name is known as the identifier and the value is stored at the identifiers address.</description>

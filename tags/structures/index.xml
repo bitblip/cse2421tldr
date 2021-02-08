@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>structures on CSE 2421 TL;DR</title>
+    <link>/cse2421tldr/tags/structures/</link>
+    <description>Recent content in structures on CSE 2421 TL;DR</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Jan 2021 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/structures/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture 12</title>
+      <link>/cse2421tldr/posts/lecture-12/</link>
+      <pubDate>Mon, 04 Jan 2021 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-12/</guid>
+      <description>Lecture 12 Video : Structures in C Part A Video : Structures in C Part A
+Slides : Structures in C Part A
+Structures Collection of members (values) that can be of various types. Since members may be of different sizes, indexing cannot be used to access members of a structure. Members can be any type including Arrays, Pointers, Structures, User-defined data, and primitive types.
+ A structure is NOT an array of its members.</description>
+    </item>
+    
+  </channel>
+</rss>

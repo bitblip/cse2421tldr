@@ -6,7 +6,31 @@
     <description>Recent content in c on CSE 2421 TL;DR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jan 2020 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jan 2021 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture 12</title>
+      <link>/cse2421tldr/posts/lecture-12/</link>
+      <pubDate>Mon, 04 Jan 2021 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-12/</guid>
+      <description>Lecture 12 Video : Structures in C Part A Video : Structures in C Part A
+Slides : Structures in C Part A
+Structures Collection of members (values) that can be of various types. Since members may be of different sizes, indexing cannot be used to access members of a structure. Members can be any type including Arrays, Pointers, Structures, User-defined data, and primitive types.
+ A structure is NOT an array of its members.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 11</title>
+      <link>/cse2421tldr/posts/lecture-11/</link>
+      <pubDate>Sat, 02 Jan 2021 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-11/</guid>
+      <description>Lecture 11 Video : Software Design Principles in C
+Slides : Software Design Principles in C
+Communication Give users precise prompts such as type and formatting such as spaces, tabs, and new lines. Describe outputs with good labels.
+Structure  # include directives # define directives Function prototypes main  Variable declarations Calls to other functions No work should occur inside main.   Function definitions  Reusable components Functions should provide a single piece of functionality that is reasonably likely to be useful in other programs.</description>
+    </item>
+    
     <item>
       <title>Lecture 10</title>
       <link>/cse2421tldr/posts/lecture-10/</link>
@@ -25,7 +49,7 @@ Arrays Arrays can only be accessed by pointers. Static arrays are allocated by t
       <pubDate>Sun, 26 Jan 2020 02:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/posts/lecture-9/</guid>
-      <description>Lecture 6 Video : C Pointers 1 Part A Video : C Pointers 1 Part B
+      <description>Lecture 9 Video : C Pointers 1 Part A Video : C Pointers 1 Part B
 Slides : C Pointers Part 1
 Pointers All variables have an address. This identifies the location in memory of the value of the variable. On 64bit systems, the address is an 8-byte integer. Memory addresses can range from 0 up to the size of memory in bytes - 1.
 A variable name is known as the identifier and the value is stored at the identifiers address.</description>
@@ -50,7 +74,7 @@ int getchar(void) int putchar(int) int scanf(char const *format, $params.</descr
       <pubDate>Tue, 21 Jan 2020 02:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/posts/lecture-7/</guid>
-      <description>Lecture 6 Video : C Part 4 Redirection
+      <description>Lecture 7 Video : C Part 4 Redirection
 Slides : C Part 4 Redirection
 Redirection 3 distinct data streams: stdin(0) stdout(1) stderr(2). Unix/Linux default to keyboard, screen, and screen respectively.
 This can be changed with the command line.
@@ -63,7 +87,7 @@ This can be changed with the command line.
       <pubDate>Tue, 21 Jan 2020 02:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/posts/lecture-8/</guid>
-      <description>Lecture 6 Video : C Part 5 Control Structure
+      <description>Lecture 8 Video : C Part 5 Control Structure
 Slides : C Part 5 Control Structure
 Loop Constructs Best practice is to always use {} for clarity. 1 line loop bodies without {} will be deducted points.
 for (expression1, expression2; expression3) { ... }  Variables cannot be initializes in expression1. i.e. int i = 0. Only i = 0 is allowed in expression1.

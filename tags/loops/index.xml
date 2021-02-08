@@ -13,7 +13,7 @@
       <pubDate>Tue, 21 Jan 2020 02:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/posts/lecture-8/</guid>
-      <description>Lecture 6 Video : C Part 5 Control Structure
+      <description>Lecture 8 Video : C Part 5 Control Structure
 Slides : C Part 5 Control Structure
 Loop Constructs Best practice is to always use {} for clarity. 1 line loop bodies without {} will be deducted points.
 for (expression1, expression2; expression3) { ... }  Variables cannot be initializes in expression1. i.e. int i = 0. Only i = 0 is allowed in expression1.

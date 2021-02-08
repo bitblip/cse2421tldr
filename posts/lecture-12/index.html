@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Lecture 12 :: CSE 2421 TL;DR</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lecture 12 Video : Structures in C Part A Video : Structures in C Part A
+Slides : Structures in C Part A
+Structures Collection of members (values) that can be of various types. Since members may be of different sizes, indexing cannot be used to access members of a structure. Members can be any type including Arrays, Pointers, Structures, User-defined data, and primitive types.
+ A structure is NOT an array of its members." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/cse2421tldr/posts/lecture-12/" />
+
+
+
+
+<link rel="stylesheet" href="/cse2421tldr/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="/cse2421tldr/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="/cse2421tldr/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Lecture 12">
+<meta property="og:description" content="Structures in C" />
+<meta property="og:url" content="/cse2421tldr/posts/lecture-12/" />
+<meta property="og:site_name" content="CSE 2421 TL;DR" />
+
+  
+    <meta property="og:image" content="/cse2421tldr/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2021-01-04 02:30:11 -0500 -0500" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/cse2421tldr/">
+  <div class="logo">
+    CSE 2421 TL;DR
+  </div>
+</a>
+
+    </div>
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/cse2421tldr/posts/lecture-12/">Lecture 12</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2021-01-04 [Updated: 2021-01-04]
+      </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/cse2421tldr/tags/structures/">structures</a>&nbsp;
+    
+    #<a href="/cse2421tldr/tags/c/">c</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="lecture-12">Lecture 12<a href="#lecture-12" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p><strong>Video</strong> : <a href="https://osu.zoom.us/rec/play/e24m9bFixu0j1aqBjUMicc_K4KQsl3kfX-feEDOz8mVxby-1osBgjWIgtEO5jHPNG6yQR7nu2e3Nd1ti.yCXnMRpifBHNfI0-?continueMode=true&amp;_x_zm_rtaid=-TWha3VKT8KsS_LliFbwLw.1612734115477.eaa04ae0e2c9d8ea90808a799fd75234&amp;_x_zm_rhtaid=276">Structures in C Part A</a>
+<strong>Video</strong> : <a href="https://osu.zoom.us/rec/play/CxBlkW8KC64SvBvOf1Kk2hnGBgwS9dkqVLo5CdNUpV281j24n-43fT8L5BkXv0FyBNor31Plo2oUfDZ6.qawAHFgoua3Rcju6?continueMode=true&amp;_x_zm_rtaid=QnanR12eTGeMm7jaSafqzQ.1612742401686.41ef499faa518ddc2dadc72e0ff1bdc0&amp;_x_zm_rhtaid=688">Structures in C Part A</a></p>
+<p><strong>Slides</strong> : <a href="https://osu.instructure.com/courses/95904/files/folder/Class%20slides?preview=29100219">Structures in C Part A</a></p>
+<h1 id="structures">Structures<a href="#structures" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Collection of members (values) that can be of various types. Since members may be of different sizes, indexing cannot be used to access members of a structure. Members can be any type including Arrays, Pointers, Structures, User-defined data, and primitive types.</p>
+<blockquote>
+<p>A structure is <strong>NOT</strong> an array of its members.</p>
+</blockquote>
+<p>Structures of the same type can be assigned to one another. Array members are copied.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">struct</span> Tag {
+  type name;
+  ...
+};
+<span style="color:#66d9ef">struct</span> Tag x, y, <span style="color:#f92672">*</span>z;
+</code></pre></div><p><code>Tag</code> can be any valid identifier.</p>
+<p>Structures can also be declared without a tag but it&rsquo;s not recommended.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">struct</span> {
+  type name;
+  ...
+} x, y[<span style="color:#ae81ff">10</span>], <span style="color:#f92672">*</span>z;
+</code></pre></div><h2 id="typedef">typedef<a href="#typedef" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Create a new data type that is a structure. Note <code>struct</code> is not used when declaring the variables <code>x</code>, <code>y</code>, and <code>*z</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">struct</span> {
+  type name;
+  ...
+} Tag;
+
+Tag x, y[<span style="color:#ae81ff">10</span>], <span style="color:#f92672">*</span>z;
+</code></pre></div><blockquote>
+<p>Programmer preference as whether to use the <code>struct tag</code> or <code>typedef</code> approach. Be constant and apply the DRY principle by placing <code>typedef</code> or <code>struct tag</code> declarations at the top of your source file or a header file as needed.</p>
+</blockquote>
+<h2 id="member-access">Member Access<a href="#member-access" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Use the <strong>dot</strong> operator to access members. The dot operator has left to right associativity, meaning changing dots is possible.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">x.name;
+y.name;
+<span style="color:#f92672">*</span>z.name;
+foo.bar.bam;
+</code></pre></div><h3 id="indirect-member-access">Indirect Member Access<a href="#indirect-member-access" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Accessing structure members using a pointer. Dereferencing works as expected but it&rsquo;s annoying <code>(*foo_ptr).member</code>. The <strong>arrow</strong> operator is a solution to this. Note this must be used on a structure pointer. Dereferencing is built into the arrow operator.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">(<span style="color:#f92672">*</span>foo_ptr).member;
+foo_prt<span style="color:#f92672">-&gt;</span>member;
+
+(<span style="color:#f92672">*</span>(<span style="color:#f92672">*</span>foo_ptr).member).nested_member;
+foo_ptr<span style="color:#f92672">-&gt;</span>member<span style="color:#f92672">-&gt;</span>nested_member;
+</code></pre></div><p>Concerning an array of structs (struct pointer), pointer arithmetic is still valid. <code>foo_ptr++</code>.</p>
+<h2 id="self-referential-structures">Self-Referential Structures<a href="#self-referential-structures" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Structures can not be declared recursively (illegal in ANSI C). Consider that the <code>c</code> member must allocate memory for 3 things. Two integers and another <code>Self_Ref1</code>. This will consume infinite memory.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">struct</span> Self_Ref1 {
+  <span style="color:#66d9ef">int</span> a;
+  <span style="color:#66d9ef">int</span> b;
+  <span style="color:#66d9ef">struct</span> Self_Ref1 c;
+}
+</code></pre></div><p>Declare using pointers to fix this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">struct</span> Self_Ref1 {
+  <span style="color:#66d9ef">int</span> a;
+  <span style="color:#66d9ef">int</span> b;
+  <span style="color:#66d9ef">struct</span> Self_Ref1 <span style="color:#f92672">*</span>c;
+}
+</code></pre></div><h2 id="initializing">Initializing<a href="#initializing" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Structs are initialized in a similar fashion to arrays. Values are separated by commas int he order they are defined in the struct.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">struct</span> Struct_Example {
+  <span style="color:#66d9ef">int</span> a;
+  <span style="color:#66d9ef">short</span> b[<span style="color:#ae81ff">10</span>];
+  Some_Struct c;
+} x, y <span style="color:#f92672">=</span> {
+  <span style="color:#ae81ff">10</span>,
+  {<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>},
+  {<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">2.2</span>}
+}
+</code></pre></div><h2 id="passing-structures">Passing Structures<a href="#passing-structures" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Structures can be passed by value however they can be arbitrarily large. Use a pointer to pass a structure to a function.</p>
+<blockquote>
+<p>Only structures which are not much larger than a pointer should be passed by value.</p>
+</blockquote>
+<p>As usual with read only functions, pass structure pointers as constants. <code>float func2(const struct *structPtr);</code></p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="/cse2421tldr/posts/lecture-11/">
+                <span class="button__text">Lecture 11</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2021 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/cse2421tldr/assets/main.js"></script>
+<script src="/cse2421tldr/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
