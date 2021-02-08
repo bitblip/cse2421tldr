@@ -5,7 +5,7 @@ description : "C pointers Part 1"
 tags: ["pointers", "c"]
 ---
 
-# Lecture 6
+# Lecture 9
 **Video** : [C Pointers 1 Part A](https://urldefense.com/v3/__https:/osu.zoom.us/rec/share/1cH0fwe-6AaW6vblfsNwSgH8ecfA5YTHiY-aDQh73KWvlhW7-wrY7Zb5OY9-ujWL.NlyWX9aexZfwF0vh__;!!KGKeukY!g0HVicmbD96-kMBf6C0Y6yeIBc6PxYEnXHwqREwc2_xHUHentdY3mZguAaV9ofIi$)
 **Video** : [C Pointers 1 Part B](https://urldefense.com/v3/__https:/osu.zoom.us/rec/share/jHawEDCjBdpIoDa8Z-hTOtSFMjuV08B6Zvh72uakOt-t1cyK60tUU_oDdqZN3EK9.oJcDVykGNjeBAhsH__;!!KGKeukY!jJ1CqAWnDNR1E4qfBxZ2Px7AooNk-vvhjAWMgVGoEqeYijyVP3y-zrKFlv6cy8_p$)
 

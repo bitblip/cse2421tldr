@@ -5,7 +5,7 @@ description : "C part 4 Redirection"
 tags: ["c"]
 ---
 
-# Lecture 6
+# Lecture 7
 **Video** : [C Part 4 Redirection](https://urldefense.com/v3/__https:/osu.zoom.us/rec/share/SmP0313jzBbpvkY3b43vqQHIjz87t53Ta9_wa_lwf9ncAkois1aZgfj2qWJVt5D6.LVf-CM9JsGSnSzF-__;!!KGKeukY!lm_C1baWRZjwPkyLKBJCghfVg-ggssz2ujRxreVrj04kpMwdB_uk10W1lADFdk_w$)
 
 **Slides** : [C Part 4 Redirection](https://osu.instructure.com/courses/95904/files/folder/Zoom%20classes?preview=28650854)
