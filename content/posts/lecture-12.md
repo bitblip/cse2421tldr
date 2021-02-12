@@ -1,6 +1,6 @@
 ---
 title: "Lecture 12"
-date: 2021-01-04T02:30:11-05:00
+date: 2021-02-02T02:30:11-05:00
 description : "Structures in C"
 tags: ["structures", "c"]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Lecture 11"
-date: 2021-01-02T02:30:11-05:00
+date: 2021-02-02T02:30:11-05:00
 description : "Software Design Principles in C"
 tags: ["design", "c"]
 ---
