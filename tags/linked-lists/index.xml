@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linked lists on CSE 2421 TL;DR</title>
+    <link>/cse2421tldr/tags/linked-lists/</link>
+    <description>Recent content in linked lists on CSE 2421 TL;DR</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Feb 2021 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/linked-lists/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture 13</title>
+      <link>/cse2421tldr/posts/lecture-13/</link>
+      <pubDate>Thu, 04 Feb 2021 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-13/</guid>
+      <description>Lecture 13 Video : Linked Lists In C Part A Video : Linked Lists In C Part B
+Slides : Linked Lists
+Linked List Nodes List of objects that have pointers to the next node in the list. More efficient than arrays when inserting and deleting items from the list.
+struct Data { ... } typedef struct Node { struct Data data; struct Node *next; }Node;  Note that despite the typedef Node declaration as Node, the identifier is not available until after the struct has been parsed by the compiler.</description>
+    </item>
+    
+  </channel>
+</rss>

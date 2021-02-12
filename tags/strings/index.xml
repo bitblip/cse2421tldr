@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>strings on CSE 2421 TL;DR</title>
+    <link>/cse2421tldr/tags/strings/</link>
+    <description>Recent content in strings on CSE 2421 TL;DR</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Feb 2021 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/strings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture 14</title>
+      <link>/cse2421tldr/posts/lecture-14/</link>
+      <pubDate>Tue, 09 Feb 2021 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-14/</guid>
+      <description>Lecture 14 Video : Strings In C
+Slides : Linked Lists
+Strings ANSI C does not have a string data type. Strings are stored as contiguous bytes in memory, as an array. Include string.h and or strings.h to access library string functions. Character will be encoded to memory as ASCII.
+To manipulate strings, use char arrays. Character arrays must end with the NULL character \0. The null character is a critical differentiation between strings and other kinds of arrays.</description>
+    </item>
+    
+  </channel>
+</rss>

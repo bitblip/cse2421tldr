@@ -6,29 +6,53 @@
     <description>Recent content in c on CSE 2421 TL;DR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jan 2021 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/c/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Lecture 12</title>
-      <link>/cse2421tldr/posts/lecture-12/</link>
-      <pubDate>Mon, 04 Jan 2021 02:30:11 -0500</pubDate>
+      <title>Lecture 14</title>
+      <link>/cse2421tldr/posts/lecture-14/</link>
+      <pubDate>Tue, 09 Feb 2021 02:30:11 -0500</pubDate>
       
-      <guid>/cse2421tldr/posts/lecture-12/</guid>
-      <description>Lecture 12 Video : Structures in C Part A Video : Structures in C Part A
-Slides : Structures in C Part A
-Structures Collection of members (values) that can be of various types. Since members may be of different sizes, indexing cannot be used to access members of a structure. Members can be any type including Arrays, Pointers, Structures, User-defined data, and primitive types.
- A structure is NOT an array of its members.</description>
+      <guid>/cse2421tldr/posts/lecture-14/</guid>
+      <description>Lecture 14 Video : Strings In C
+Slides : Linked Lists
+Strings ANSI C does not have a string data type. Strings are stored as contiguous bytes in memory, as an array. Include string.h and or strings.h to access library string functions. Character will be encoded to memory as ASCII.
+To manipulate strings, use char arrays. Character arrays must end with the NULL character \0. The null character is a critical differentiation between strings and other kinds of arrays.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 13</title>
+      <link>/cse2421tldr/posts/lecture-13/</link>
+      <pubDate>Thu, 04 Feb 2021 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-13/</guid>
+      <description>Lecture 13 Video : Linked Lists In C Part A Video : Linked Lists In C Part B
+Slides : Linked Lists
+Linked List Nodes List of objects that have pointers to the next node in the list. More efficient than arrays when inserting and deleting items from the list.
+struct Data { ... } typedef struct Node { struct Data data; struct Node *next; }Node;  Note that despite the typedef Node declaration as Node, the identifier is not available until after the struct has been parsed by the compiler.</description>
     </item>
     
     <item>
       <title>Lecture 11</title>
       <link>/cse2421tldr/posts/lecture-11/</link>
-      <pubDate>Sat, 02 Jan 2021 02:30:11 -0500</pubDate>
+      <pubDate>Tue, 02 Feb 2021 02:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/posts/lecture-11/</guid>
       <description>Lecture 11 Video : Software Design Principles in C
 Slides : Software Design Principles in C
 Communication Give users precise prompts such as type and formatting such as spaces, tabs, and new lines. Describe outputs with good labels.
 Structure  # include directives # define directives Function prototypes main  Variable declarations Calls to other functions No work should occur inside main.   Function definitions  Reusable components Functions should provide a single piece of functionality that is reasonably likely to be useful in other programs.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 12</title>
+      <link>/cse2421tldr/posts/lecture-12/</link>
+      <pubDate>Tue, 02 Feb 2021 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-12/</guid>
+      <description>Lecture 12 Video : Structures in C Part A Video : Structures in C Part A
+Slides : Structures in C Part A
+Structures Collection of members (values) that can be of various types. Since members may be of different sizes, indexing cannot be used to access members of a structure. Members can be any type including Arrays, Pointers, Structures, User-defined data, and primitive types.
+ A structure is NOT an array of its members.</description>
     </item>
     
     <item>

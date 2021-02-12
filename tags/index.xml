@@ -6,31 +6,49 @@
     <description>Recent content in Tags on CSE 2421 TL;DR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jan 2021 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>c</title>
       <link>/cse2421tldr/tags/c/</link>
-      <pubDate>Mon, 04 Jan 2021 02:30:11 -0500</pubDate>
+      <pubDate>Tue, 09 Feb 2021 02:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/tags/c/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>structures</title>
-      <link>/cse2421tldr/tags/structures/</link>
-      <pubDate>Mon, 04 Jan 2021 02:30:11 -0500</pubDate>
+      <title>strings</title>
+      <link>/cse2421tldr/tags/strings/</link>
+      <pubDate>Tue, 09 Feb 2021 02:30:11 -0500</pubDate>
       
-      <guid>/cse2421tldr/tags/structures/</guid>
+      <guid>/cse2421tldr/tags/strings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linked lists</title>
+      <link>/cse2421tldr/tags/linked-lists/</link>
+      <pubDate>Thu, 04 Feb 2021 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/tags/linked-lists/</guid>
       <description></description>
     </item>
     
     <item>
       <title>design</title>
       <link>/cse2421tldr/tags/design/</link>
-      <pubDate>Sat, 02 Jan 2021 02:30:11 -0500</pubDate>
+      <pubDate>Tue, 02 Feb 2021 02:30:11 -0500</pubDate>
       
       <guid>/cse2421tldr/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>structures</title>
+      <link>/cse2421tldr/tags/structures/</link>
+      <pubDate>Tue, 02 Feb 2021 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/tags/structures/</guid>
       <description></description>
     </item>
     

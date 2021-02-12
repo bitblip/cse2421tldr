@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Lecture 14 :: CSE 2421 TL;DR</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lecture 14 Video : Strings In C
+Slides : Linked Lists
+Strings ANSI C does not have a string data type. Strings are stored as contiguous bytes in memory, as an array. Include string.h and or strings.h to access library string functions. Character will be encoded to memory as ASCII.
+To manipulate strings, use char arrays. Character arrays must end with the NULL character \0. The null character is a critical differentiation between strings and other kinds of arrays." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/cse2421tldr/posts/lecture-14/" />
+
+
+
+
+<link rel="stylesheet" href="/cse2421tldr/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="/cse2421tldr/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="/cse2421tldr/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Lecture 14">
+<meta property="og:description" content="Strings in C" />
+<meta property="og:url" content="/cse2421tldr/posts/lecture-14/" />
+<meta property="og:site_name" content="CSE 2421 TL;DR" />
+
+  
+    <meta property="og:image" content="/cse2421tldr/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2021-02-09 02:30:11 -0500 -0500" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/cse2421tldr/">
+  <div class="logo">
+    CSE 2421 TL;DR
+  </div>
+</a>
+
+    </div>
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/cse2421tldr/posts/lecture-14/">Lecture 14</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2021-02-09 [Updated: 2021-02-09]
+      </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/cse2421tldr/tags/strings/">strings</a>&nbsp;
+    
+    #<a href="/cse2421tldr/tags/c/">c</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="lecture-14">Lecture 14<a href="#lecture-14" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p><strong>Video</strong> : <a href="https://urldefense.com/v3/__https:/osu.zoom.us/rec/share/L-MbhY-DUc96mzoY7BhH58Go9D0euRmH1xN1WCIimE5ot5z0aFuO53Z6VPKy2vVw.3PwLXsmIRBf3Yjzg__;!!KGKeukY!jgKo13_VVjD40j7DbyNS3_YI9ORZBYN4Aj7urAT6Xp8HAmcs8SPmMsYocT35bXK3$">Strings In C</a></p>
+<p><strong>Slides</strong> : <a href="https://osu.instructure.com/courses/95904/files/folder/Class%20slides?preview=29393509">Linked Lists</a></p>
+<h1 id="strings">Strings<a href="#strings" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>ANSI C does not have a string data type. Strings are stored as contiguous bytes in memory, as an array. Include <code>string.h</code> and or <code>strings.h</code> to access library string functions. Character will be encoded to memory as ASCII.</p>
+<p>To manipulate strings, use <code>char</code> arrays. Character arrays must end with the <strong>NULL</strong> character <code>\0</code>. The null character is a critical differentiation between strings and other kinds of arrays.</p>
+<blockquote>
+<p>If the <code>\0</code> is missing, your code will not behave correctly.</p>
+</blockquote>
+<blockquote>
+<p>String length <code>strlen()</code> is undefined without a null byte.</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">char</span> string1[] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Some string&#34;</span>;
+<span style="color:#66d9ef">char</span> string2[<span style="color:#ae81ff">12</span>] <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;S&#39;</span>, <span style="color:#e6db74">&#39;o&#39;</span>, <span style="color:#e6db74">&#39;m&#39;</span>, <span style="color:#e6db74">&#39;e&#39;</span>, <span style="color:#e6db74">&#39; &#39;</span>, <span style="color:#e6db74">&#39;s&#39;</span>, <span style="color:#e6db74">&#39;t&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>, <span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;g&#39;</span>, <span style="color:#e6db74">&#39;\0&#39;</span>};
+</code></pre></div><h2 id="ending-null-trick">Ending null trick<a href="#ending-null-trick" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Define the array size to be one larger than the desired string length. The default behavior of the compiler is to initialize undefined elements in the initializer as <code>NULL</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">char</span> string3[<span style="color:#ae81ff">12</span>] <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;S&#39;</span>, <span style="color:#e6db74">&#39;o&#39;</span>, <span style="color:#e6db74">&#39;m&#39;</span>, <span style="color:#e6db74">&#39;e&#39;</span>, <span style="color:#e6db74">&#39; &#39;</span>, <span style="color:#e6db74">&#39;s&#39;</span>, <span style="color:#e6db74">&#39;t&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>, <span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;g&#39;</span>};
+</code></pre></div><h2 id="pointers">Pointers<a href="#pointers" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Strings are character arrays and all of the pointer things apply, including pointer arithmetic.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>stringA <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;start&#34;</span>;
+<span style="color:#66d9ef">char</span> stringB[] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;stop&#34;</span>;
+</code></pre></div><p><code>stringA</code> is only a pointer to the constant <code>&quot;start&quot;</code> stored in read only memory. Trying to modify any character in stringA, <code>stringA[0] = 'S'</code>, will result in a segmentation fault.</p>
+<p>Be aware, you cannot assign <code>stringA = stringB</code>. This will cause an <strong>incompatible type</strong> compiler error.</p>
+<h2 id="printf">printf<a href="#printf" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>When printing strings, <code>printf()</code> should be passed the address of the start of the string. Do not dereference the pointer.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">printf(<span style="color:#e6db74">&#34;%s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, stringA);
+</code></pre></div><h2 id="character-classification">Character Classification<a href="#character-classification" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Classify characters using <code>ctype.h</code> prototypes. Such as spaces <code>ispace()</code>, numbers <code>isdigit()</code>, lower case <code>islower()</code>, and many others.</p>
+<h2 id="character-modifications">Character Modifications<a href="#character-modifications" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Modify character using <code>ctype.h</code> prototypes. Such as converting a lower case character to an upper case character <code>toupper()</code>.</p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="/cse2421tldr/posts/lecture-13/">
+                <span class="button__text">Lecture 13</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2021 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/cse2421tldr/assets/main.js"></script>
+<script src="/cse2421tldr/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
