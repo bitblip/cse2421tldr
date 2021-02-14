@@ -8,7 +8,7 @@ tags: ["strings", "c"]
 # Lecture 14
 **Video** : [Strings In C](https://urldefense.com/v3/__https:/osu.zoom.us/rec/share/L-MbhY-DUc96mzoY7BhH58Go9D0euRmH1xN1WCIimE5ot5z0aFuO53Z6VPKy2vVw.3PwLXsmIRBf3Yjzg__;!!KGKeukY!jgKo13_VVjD40j7DbyNS3_YI9ORZBYN4Aj7urAT6Xp8HAmcs8SPmMsYocT35bXK3$)
 
-**Slides** : [Linked Lists](https://osu.instructure.com/courses/95904/files/folder/Class%20slides?preview=29393509)
+**Slides** : [Strings_In_C](https://osu.instructure.com/courses/95904/files/folder/Class%20slides?preview=29393509)
 
 # Strings
 ANSI C does not have a string data type. Strings are stored as contiguous bytes in memory, as an array. Include `string.h` and or `strings.h` to access library string functions. Character will be encoded to memory as ASCII.
