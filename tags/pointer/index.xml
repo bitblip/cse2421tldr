@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pointer on CSE 2421 TL;DR</title>
+    <link>/cse2421tldr/tags/pointer/</link>
+    <description>Recent content in pointer on CSE 2421 TL;DR</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Feb 2021 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/tags/pointer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture 16</title>
+      <link>/cse2421tldr/posts/lecture-16/</link>
+      <pubDate>Thu, 11 Feb 2021 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-16/</guid>
+      <description>Lecture 16 Video : C_Function_Pointers Part A Video : C_Function_Pointers Part B
+Slides : C_Function_Pointers
+ If you thought pointers were strange, function pointers are stranger.
+ Declare a function which returns a pointer. Find an int value in array and return a pointer to the found value.
+int *findValue(int value, int size, const int *array); Function Pointer Function statements are stored in memory. We can find this location in memory.</description>
+    </item>
+    
+  </channel>
+</rss>

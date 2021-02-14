@@ -14,7 +14,7 @@
       
       <guid>/cse2421tldr/posts/lecture-14/</guid>
       <description>Lecture 14 Video : Strings In C
-Slides : Linked Lists
+Slides : Strings_In_C
 Strings ANSI C does not have a string data type. Strings are stored as contiguous bytes in memory, as an array. Include string.h and or strings.h to access library string functions. Character will be encoded to memory as ASCII.
 To manipulate strings, use char arrays. Character arrays must end with the NULL character \0. The null character is a critical differentiation between strings and other kinds of arrays.</description>
     </item>

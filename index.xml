@@ -6,7 +6,20 @@
     <description>Recent content on CSE 2421 TL;DR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Feb 2021 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Feb 2021 02:30:11 -0500</lastBuildDate><atom:link href="/cse2421tldr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture 16</title>
+      <link>/cse2421tldr/posts/lecture-16/</link>
+      <pubDate>Thu, 11 Feb 2021 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-16/</guid>
+      <description>Lecture 16 Video : C_Function_Pointers Part A Video : C_Function_Pointers Part B
+Slides : C_Function_Pointers
+ If you thought pointers were strange, function pointers are stranger.
+ Declare a function which returns a pointer. Find an int value in array and return a pointer to the found value.
+int *findValue(int value, int size, const int *array); Function Pointer Function statements are stored in memory. We can find this location in memory.</description>
+    </item>
+    
     <item>
       <title>Lecture 14</title>
       <link>/cse2421tldr/posts/lecture-14/</link>
@@ -14,9 +27,22 @@
       
       <guid>/cse2421tldr/posts/lecture-14/</guid>
       <description>Lecture 14 Video : Strings In C
-Slides : Linked Lists
+Slides : Strings_In_C
 Strings ANSI C does not have a string data type. Strings are stored as contiguous bytes in memory, as an array. Include string.h and or strings.h to access library string functions. Character will be encoded to memory as ASCII.
 To manipulate strings, use char arrays. Character arrays must end with the NULL character \0. The null character is a critical differentiation between strings and other kinds of arrays.</description>
+    </item>
+    
+    <item>
+      <title>Lecture 15</title>
+      <link>/cse2421tldr/posts/lecture-15/</link>
+      <pubDate>Tue, 09 Feb 2021 02:30:11 -0500</pubDate>
+      
+      <guid>/cse2421tldr/posts/lecture-15/</guid>
+      <description>Lecture 15 Video : Storage Class Scope Linkage
+Slides : C_Storage_Class_Scope_Linkage
+Memory types Kinds of storage common to all programs.
+ If you know what kind of storage a part of your program is held in, this is valuable information.
+  Stack Heap Registers Disk  Memory Segments Divided into 3 parts. Stack and Heap memory start as distant as possible from one another and grow towards each other.</description>
     </item>
     
     <item>
